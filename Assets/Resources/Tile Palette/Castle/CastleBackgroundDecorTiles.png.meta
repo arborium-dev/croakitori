@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 552ba298b7053974e928ae38bb6e68e2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5574597813209179618
+    second: CastleBackgroundDecorTiles_0
+  - first:
+      213: -5474019650198708652
+    second: CastleBackgroundDecorTiles_1
+  - first:
+      213: -2977531034125516685
+    second: CastleBackgroundDecorTiles_2
+  - first:
+      213: 325941156260665546
+    second: CastleBackgroundDecorTiles_3
+  - first:
+      213: -4146104295532289738
+    second: CastleBackgroundDecorTiles_4
+  - first:
+      213: 8551810235013287770
+    second: CastleBackgroundDecorTiles_5
+  - first:
+      213: 6445277834218724051
+    second: CastleBackgroundDecorTiles_6
+  - first:
+      213: 1195609510635281647
+    second: CastleBackgroundDecorTiles_7
+  - first:
+      213: -1064257738389055170
+    second: CastleBackgroundDecorTiles_8
+  - first:
+      213: 2486186640010798792
+    second: CastleBackgroundDecorTiles_9
+  - first:
+      213: -380169304712525358
+    second: CastleBackgroundDecorTiles_10
+  - first:
+      213: -1791108029423493398
+    second: CastleBackgroundDecorTiles_11
+  - first:
+      213: -7165003671798433249
+    second: CastleBackgroundDecorTiles_12
+  - first:
+      213: 8581663104628810173
+    second: CastleBackgroundDecorTiles_13
+  - first:
+      213: -8367571774246807610
+    second: CastleBackgroundDecorTiles_14
+  - first:
+      213: -5899748184612493386
+    second: CastleBackgroundDecorTiles_15
+  - first:
+      213: -5268844035520786756
+    second: CastleBackgroundDecorTiles_16
+  - first:
+      213: 6838753252067096278
+    second: CastleBackgroundDecorTiles_17
+  - first:
+      213: -5806566436478069991
+    second: CastleBackgroundDecorTiles_18
+  - first:
+      213: 5021122014927940960
+    second: CastleBackgroundDecorTiles_19
+  - first:
+      213: -837938748581466176
+    second: CastleBackgroundDecorTiles_20
+  - first:
+      213: 857578786330422374
+    second: CastleBackgroundDecorTiles_21
+  - first:
+      213: -689056717180957088
+    second: CastleBackgroundDecorTiles_22
+  - first:
+      213: -8616485389044856199
+    second: CastleBackgroundDecorTiles_23
+  - first:
+      213: -2385674685907804726
+    second: CastleBackgroundDecorTiles_24
+  - first:
+      213: 5721385201290466819
+    second: CastleBackgroundDecorTiles_25
+  - first:
+      213: -6286341669783534562
+    second: CastleBackgroundDecorTiles_26
+  - first:
+      213: -1155602293619609150
+    second: CastleBackgroundDecorTiles_27
+  - first:
+      213: -7145141977001475409
+    second: CastleBackgroundDecorTiles_28
+  - first:
+      213: -7696668397822440510
+    second: CastleBackgroundDecorTiles_29
+  - first:
+      213: 7976522442413676017
+    second: CastleBackgroundDecorTiles_30
+  - first:
+      213: -1076125993895505982
+    second: CastleBackgroundDecorTiles_31
+  - first:
+      213: 6893448853821025650
+    second: CastleBackgroundDecorTiles_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 151
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5a006fc23fc5d40800000000000000
+      internalID: 5574597813209179618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 151
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ed56871206804b0800000000000000
+      internalID: -5474019650198708652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 151
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3704f33dc4fada6d0800000000000000
+      internalID: -2977531034125516685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 151
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8d89431c9f58400800000000000000
+      internalID: 325941156260665546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 151
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631a3173c141676c0800000000000000
+      internalID: -4146104295532289738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 41
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f448c69122ea670800000000000000
+      internalID: 8551810235013287770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 95
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da5e4baa0a327950800000000000000
+      internalID: 6445277834218724051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 95
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fec9e7be388a79010800000000000000
+      internalID: 1195609510635281647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 95
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e391cd1c93ffa31f0800000000000000
+      internalID: -1064257738389055170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 42
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c66a23a395b08220800000000000000
+      internalID: 2486186640010798792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d94a16180e59baf0800000000000000
+      internalID: -380169304712525358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_11
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 18
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeedcd7acb4b427e0800000000000000
+      internalID: -1791108029423493398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_12
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ab5105f1bc09c90800000000000000
+      internalID: -7165003671798433249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1e9754021381770800000000000000
+      internalID: 8581663104628810173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_14
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c71f6bfdc960eb80800000000000000
+      internalID: -8367571774246807610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7aae7c842ef1ea0800000000000000
+      internalID: -5899748184612493386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_16
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 47
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe09d5e34e41e6b0800000000000000
+      internalID: -5268844035520786756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_17
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 47
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6b10879d128ee50800000000000000
+      internalID: 6838753252067096278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 39
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913d40d279eea6fa0800000000000000
+      internalID: -5806566436478069991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_19
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06d6ca99edb9ea540800000000000000
+      internalID: 5021122014927940960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_20
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cf2443d52b0f54f0800000000000000
+      internalID: -837938748581466176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66ca22ecc5bb6eb00800000000000000
+      internalID: 857578786330422374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_22
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e0556019aff66f0800000000000000
+      internalID: -689056717180957088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_23
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a43a5d0381c6880800000000000000
+      internalID: -8616485389044856199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_24
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdd2d4538164eed0800000000000000
+      internalID: -2385674685907804726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30658120781766f40800000000000000
+      internalID: 5721385201290466819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_26
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1401dbce8d62c8a0800000000000000
+      internalID: -6286341669783534562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c13d2b26d976ffe0800000000000000
+      internalID: -1155602293619609150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_28
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2481f7a3b57dc90800000000000000
+      internalID: -7145141977001475409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_29
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cb81d1fed0ff2590800000000000000
+      internalID: -7696668397822440510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f59ff266ec42be60800000000000000
+      internalID: 7976522442413676017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_31
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 0
+        width: 19
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf4b403c15d011f0800000000000000
+      internalID: -1076125993895505982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleBackgroundDecorTiles_32
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 21
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d6351a5337aaf50800000000000000
+      internalID: 6893448853821025650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CastleBackgroundDecorTiles_0: 5574597813209179618
+      CastleBackgroundDecorTiles_1: -5474019650198708652
+      CastleBackgroundDecorTiles_10: -380169304712525358
+      CastleBackgroundDecorTiles_11: -1791108029423493398
+      CastleBackgroundDecorTiles_12: -7165003671798433249
+      CastleBackgroundDecorTiles_13: 8581663104628810173
+      CastleBackgroundDecorTiles_14: -8367571774246807610
+      CastleBackgroundDecorTiles_15: -5899748184612493386
+      CastleBackgroundDecorTiles_16: -5268844035520786756
+      CastleBackgroundDecorTiles_17: 6838753252067096278
+      CastleBackgroundDecorTiles_18: -5806566436478069991
+      CastleBackgroundDecorTiles_19: 5021122014927940960
+      CastleBackgroundDecorTiles_2: -2977531034125516685
+      CastleBackgroundDecorTiles_20: -837938748581466176
+      CastleBackgroundDecorTiles_21: 857578786330422374
+      CastleBackgroundDecorTiles_22: -689056717180957088
+      CastleBackgroundDecorTiles_23: -8616485389044856199
+      CastleBackgroundDecorTiles_24: -2385674685907804726
+      CastleBackgroundDecorTiles_25: 5721385201290466819
+      CastleBackgroundDecorTiles_26: -6286341669783534562
+      CastleBackgroundDecorTiles_27: -1155602293619609150
+      CastleBackgroundDecorTiles_28: -7145141977001475409
+      CastleBackgroundDecorTiles_29: -7696668397822440510
+      CastleBackgroundDecorTiles_3: 325941156260665546
+      CastleBackgroundDecorTiles_30: 7976522442413676017
+      CastleBackgroundDecorTiles_31: -1076125993895505982
+      CastleBackgroundDecorTiles_32: 6893448853821025650
+      CastleBackgroundDecorTiles_4: -4146104295532289738
+      CastleBackgroundDecorTiles_5: 8551810235013287770
+      CastleBackgroundDecorTiles_6: 6445277834218724051
+      CastleBackgroundDecorTiles_7: 1195609510635281647
+      CastleBackgroundDecorTiles_8: -1064257738389055170
+      CastleBackgroundDecorTiles_9: 2486186640010798792
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

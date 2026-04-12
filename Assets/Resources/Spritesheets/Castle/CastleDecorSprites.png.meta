@@ -1,0 +1,1378 @@
+fileFormatVersion: 2
+guid: 5987c91f04de83a4b87d1b71b3b5e5fa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6602632900328389079
+    second: CastleDecorSprites_0
+  - first:
+      213: -5191482688950134205
+    second: CastleDecorSprites_1
+  - first:
+      213: -8937098770745018903
+    second: CastleDecorSprites_2
+  - first:
+      213: 8186471570148213435
+    second: CastleDecorSprites_3
+  - first:
+      213: -1037003098537498592
+    second: CastleDecorSprites_4
+  - first:
+      213: 2509980766433502666
+    second: CastleDecorSprites_5
+  - first:
+      213: 9062769188005884817
+    second: CastleDecorSprites_6
+  - first:
+      213: 7905287688763153834
+    second: CastleDecorSprites_7
+  - first:
+      213: -3861637662101046232
+    second: CastleDecorSprites_8
+  - first:
+      213: 8129430162619727177
+    second: CastleDecorSprites_9
+  - first:
+      213: 5449896162657685902
+    second: CastleDecorSprites_10
+  - first:
+      213: -954783631411815643
+    second: CastleDecorSprites_11
+  - first:
+      213: -3935367249111126951
+    second: CastleDecorSprites_12
+  - first:
+      213: -651633084016101483
+    second: CastleDecorSprites_13
+  - first:
+      213: -4403208183701353580
+    second: CastleDecorSprites_14
+  - first:
+      213: -6401015980090950930
+    second: CastleDecorSprites_15
+  - first:
+      213: -531607256063378255
+    second: CastleDecorSprites_16
+  - first:
+      213: -4685927066812409601
+    second: CastleDecorSprites_17
+  - first:
+      213: -6806147179066470200
+    second: CastleDecorSprites_18
+  - first:
+      213: 123922934185438311
+    second: CastleDecorSprites_19
+  - first:
+      213: 5804574089894383927
+    second: CastleDecorSprites_20
+  - first:
+      213: 1908096679541561243
+    second: CastleDecorSprites_21
+  - first:
+      213: 3616160166125488629
+    second: CastleDecorSprites_22
+  - first:
+      213: -2633568071411014227
+    second: CastleDecorSprites_23
+  - first:
+      213: -4418123384586801339
+    second: CastleDecorSprites_24
+  - first:
+      213: 6187356042512119796
+    second: CastleDecorSprites_25
+  - first:
+      213: -2009557854934463128
+    second: CastleDecorSprites_26
+  - first:
+      213: -8713110820716101663
+    second: CastleDecorSprites_27
+  - first:
+      213: 8462670672270971813
+    second: CastleDecorSprites_28
+  - first:
+      213: 4897832396943731827
+    second: CastleDecorSprites_29
+  - first:
+      213: -559708811365409724
+    second: CastleDecorSprites_30
+  - first:
+      213: -266725290070651000
+    second: CastleDecorSprites_31
+  - first:
+      213: 3885418951448337755
+    second: CastleDecorSprites_32
+  - first:
+      213: 5826244494923317146
+    second: CastleDecorSprites_33
+  - first:
+      213: 2391093613660927231
+    second: CastleDecorSprites_34
+  - first:
+      213: 3890154115135028377
+    second: CastleDecorSprites_35
+  - first:
+      213: -713715247896724264
+    second: CastleDecorSprites_36
+  - first:
+      213: 3532782606646889478
+    second: CastleDecorSprites_37
+  - first:
+      213: 1120638999287456663
+    second: CastleDecorSprites_38
+  - first:
+      213: -588657226556176487
+    second: CastleDecorSprites_39
+  - first:
+      213: -9141626666151907605
+    second: CastleDecorSprites_40
+  - first:
+      213: 2947800998448385356
+    second: CastleDecorSprites_41
+  - first:
+      213: 992857868508300823
+    second: CastleDecorSprites_42
+  - first:
+      213: 7933655568770922168
+    second: CastleDecorSprites_43
+  - first:
+      213: 684571512586768847
+    second: CastleDecorSprites_44
+  - first:
+      213: 6648549332679263496
+    second: CastleDecorSprites_45
+  - first:
+      213: -515358707749425233
+    second: CastleDecorSprites_46
+  - first:
+      213: -8469038933665776048
+    second: CastleDecorSprites_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CastleDecorSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d9716ef3a341ab50800000000000000
+      internalID: 6602632900328389079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 135
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a9983000624f7b0800000000000000
+      internalID: -5191482688950134205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 135
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e5b92fc40c09f380800000000000000
+      internalID: -8937098770745018903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 135
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2c48ee4803c9170800000000000000
+      internalID: 8186471570148213435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_4
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 127
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02861b81d23db91f0800000000000000
+      internalID: -1037003098537498592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_5
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 127
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5e458653e35d220800000000000000
+      internalID: 2509980766433502666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 127
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19332745f8c65cd70800000000000000
+      internalID: 9062769188005884817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_7
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 127
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad1ff7d44935bd60800000000000000
+      internalID: 7905287688763153834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_8
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 18
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c72339105b86ac0800000000000000
+      internalID: -3861637662101046232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 140
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d7b4d49a981d070800000000000000
+      internalID: 8129430162619727177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_10
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 140
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e81d9f56fabe1ab40800000000000000
+      internalID: 5449896162657685902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52b575c885defb2f0800000000000000
+      internalID: -954783631411815643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_12
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 111
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95c66006654c269c0800000000000000
+      internalID: -3935367249111126951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 597f35f992fe4f6f0800000000000000
+      internalID: -651633084016101483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_14
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 111
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b43627c79a4e2c0800000000000000
+      internalID: -4403208183701353580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_15
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea741151e50b27a0800000000000000
+      internalID: -6401015980090950930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_16
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 103
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc7256640a5f98f0800000000000000
+      internalID: -531607256063378255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 103
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8124be82e38feb0800000000000000
+      internalID: -4685927066812409601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_18
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 103
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c057be7335bb81a0800000000000000
+      internalID: -6806147179066470200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_19
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 120
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ca5a7804348b100800000000000000
+      internalID: 123922934185438311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_20
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 111
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731579c716dfd8050800000000000000
+      internalID: 5804574089894383927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 120
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b975d2d02dbea7a10800000000000000
+      internalID: 1908096679541561243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_22
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 111
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9c3d8038e2f2230800000000000000
+      internalID: 3616160166125488629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da56cb3dacfa37bd0800000000000000
+      internalID: -2633568071411014227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_24
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 87
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f6bdf903cafa2c0800000000000000
+      internalID: -4418123384586801339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_25
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 87
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f73dc4e987edd550800000000000000
+      internalID: 6187356042512119796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_26
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 55
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d090d27cd9c14e0800000000000000
+      internalID: -2009557854934463128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_27
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 95
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efba926fdfc41780800000000000000
+      internalID: -8713110820716101663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_28
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 95
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a3d3d7a322717570800000000000000
+      internalID: 8462670672270971813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37c2b3d7d9898f340800000000000000
+      internalID: 4897832396943731827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_30
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 63
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c98e03dc38b38f0800000000000000
+      internalID: -559708811365409724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_31
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fc9b803c66c4cf0800000000000000
+      internalID: -266725290070651000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 76
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5d16a453f7cbe530800000000000000
+      internalID: 3885418951448337755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_33
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 63
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9fba76df7afad050800000000000000
+      internalID: 5826244494923317146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_34
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 63
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f6fa19fede2120800000000000000
+      internalID: 2391093613660927231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_35
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99cb52a8e8a9cf530800000000000000
+      internalID: 3890154115135028377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_36
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 56
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dcf55273cf5816f0800000000000000
+      internalID: -713715247896724264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ccdd13017f60130800000000000000
+      internalID: 3532782606646889478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_38
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 15
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7936af18b3f4d8f00800000000000000
+      internalID: 1120638999287456663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 7
+        width: 98
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99707ac0f5ba4d7f0800000000000000
+      internalID: -588657226556176487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beee6c64bfa622180800000000000000
+      internalID: -9141626666151907605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_41
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 47
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4dce05d361b8e820800000000000000
+      internalID: 2947800998448385356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_42
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 31
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71683e498f657cd00800000000000000
+      internalID: 992857868508300823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_43
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6f3ea94b10a1e60800000000000000
+      internalID: 7933655568770922168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_44
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 31
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc11617e926108900800000000000000
+      internalID: 684571512586768847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_45
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 7
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 805020e7464644c50800000000000000
+      internalID: 6648549332679263496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_46
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 7
+        width: 19
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafe0bc5cf319d8f0800000000000000
+      internalID: -515358707749425233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CastleDecorSprites_47
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 7
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ef5e1f5fde77a80800000000000000
+      internalID: -8469038933665776048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CastleDecorSprites_0: 6602632900328389079
+      CastleDecorSprites_1: -5191482688950134205
+      CastleDecorSprites_10: 5449896162657685902
+      CastleDecorSprites_11: -954783631411815643
+      CastleDecorSprites_12: -3935367249111126951
+      CastleDecorSprites_13: -651633084016101483
+      CastleDecorSprites_14: -4403208183701353580
+      CastleDecorSprites_15: -6401015980090950930
+      CastleDecorSprites_16: -531607256063378255
+      CastleDecorSprites_17: -4685927066812409601
+      CastleDecorSprites_18: -6806147179066470200
+      CastleDecorSprites_19: 123922934185438311
+      CastleDecorSprites_2: -8937098770745018903
+      CastleDecorSprites_20: 5804574089894383927
+      CastleDecorSprites_21: 1908096679541561243
+      CastleDecorSprites_22: 3616160166125488629
+      CastleDecorSprites_23: -2633568071411014227
+      CastleDecorSprites_24: -4418123384586801339
+      CastleDecorSprites_25: 6187356042512119796
+      CastleDecorSprites_26: -2009557854934463128
+      CastleDecorSprites_27: -8713110820716101663
+      CastleDecorSprites_28: 8462670672270971813
+      CastleDecorSprites_29: 4897832396943731827
+      CastleDecorSprites_3: 8186471570148213435
+      CastleDecorSprites_30: -559708811365409724
+      CastleDecorSprites_31: -266725290070651000
+      CastleDecorSprites_32: 3885418951448337755
+      CastleDecorSprites_33: 5826244494923317146
+      CastleDecorSprites_34: 2391093613660927231
+      CastleDecorSprites_35: 3890154115135028377
+      CastleDecorSprites_36: -713715247896724264
+      CastleDecorSprites_37: 3532782606646889478
+      CastleDecorSprites_38: 1120638999287456663
+      CastleDecorSprites_39: -588657226556176487
+      CastleDecorSprites_4: -1037003098537498592
+      CastleDecorSprites_40: -9141626666151907605
+      CastleDecorSprites_41: 2947800998448385356
+      CastleDecorSprites_42: 992857868508300823
+      CastleDecorSprites_43: 7933655568770922168
+      CastleDecorSprites_44: 684571512586768847
+      CastleDecorSprites_45: 6648549332679263496
+      CastleDecorSprites_46: -515358707749425233
+      CastleDecorSprites_47: -8469038933665776048
+      CastleDecorSprites_5: 2509980766433502666
+      CastleDecorSprites_6: 9062769188005884817
+      CastleDecorSprites_7: 7905287688763153834
+      CastleDecorSprites_8: -3861637662101046232
+      CastleDecorSprites_9: 8129430162619727177
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

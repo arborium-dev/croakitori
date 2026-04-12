@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 4ce93157cb96d744d98017b2e14c3615
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5864857765303228168
+    second: SkeletonHelmetSpritesheet_0
+  - first:
+      213: 7728846281852391418
+    second: SkeletonHelmetSpritesheet_1
+  - first:
+      213: 8801754512839731348
+    second: SkeletonHelmetSpritesheet_2
+  - first:
+      213: -600207659355232449
+    second: SkeletonHelmetSpritesheet_3
+  - first:
+      213: -3742254561232494097
+    second: SkeletonHelmetSpritesheet_4
+  - first:
+      213: -9026854754382903345
+    second: SkeletonHelmetSpritesheet_5
+  - first:
+      213: 2776661793232050264
+    second: SkeletonHelmetSpritesheet_6
+  - first:
+      213: -7129927163531180633
+    second: SkeletonHelmetSpritesheet_7
+  - first:
+      213: -3529855587866862688
+    second: SkeletonHelmetSpritesheet_8
+  - first:
+      213: -616604628942047111
+    second: SkeletonHelmetSpritesheet_9
+  - first:
+      213: 3328531008015348137
+    second: SkeletonHelmetSpritesheet_10
+  - first:
+      213: -7287424190359265728
+    second: SkeletonHelmetSpritesheet_11
+  - first:
+      213: 2675253036442782403
+    second: SkeletonHelmetSpritesheet_12
+  - first:
+      213: 4473022967232061434
+    second: SkeletonHelmetSpritesheet_13
+  - first:
+      213: -8166304370071720247
+    second: SkeletonHelmetSpritesheet_14
+  - first:
+      213: 3889043360782701061
+    second: SkeletonHelmetSpritesheet_15
+  - first:
+      213: -5231395940280314675
+    second: SkeletonHelmetSpritesheet_16
+  - first:
+      213: 6975938864462975022
+    second: SkeletonHelmetSpritesheet_17
+  - first:
+      213: 107274556924450953
+    second: SkeletonHelmetSpritesheet_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 137
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8e8e09fe6db9ea0800000000000000
+      internalID: -5864857765303228168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 106
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff09618eb0624b60800000000000000
+      internalID: 7728846281852391418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 72
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498e002881d162a70800000000000000
+      internalID: 8801754512839731348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 41
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37a9a85052aba7f0800000000000000
+      internalID: -600207659355232449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 41
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1e6aacd47d01cc0800000000000000
+      internalID: -3742254561232494097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc706fd5d6b2ab280800000000000000
+      internalID: -9026854754382903345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858def6803fa88620800000000000000
+      internalID: 2776661793232050264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 41
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5c05f45096d0d90800000000000000
+      internalID: -7129927163531180633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 41
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab94c87b0f630fc0800000000000000
+      internalID: -3529855587866862688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9783c0d5b516177f0800000000000000
+      internalID: -616604628942047111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 42
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a1b0a40151513e20800000000000000
+      internalID: 3328531008015348137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 9
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e1c0e2f4eddda90800000000000000
+      internalID: -7287424190359265728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 9
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca05796678602520800000000000000
+      internalID: 2675253036442782403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 9
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: affd70a80be531e30800000000000000
+      internalID: 4473022967232061434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 10
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cea72e31757bae80800000000000000
+      internalID: -8166304370071720247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 9
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5025b83e458a8f530800000000000000
+      internalID: 3889043360782701061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 9
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4db240c195667b0800000000000000
+      internalID: -5231395940280314675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 9
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e205827ef638fc060800000000000000
+      internalID: 6975938864462975022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonHelmetSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 9
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9885be224ad1d7100800000000000000
+      internalID: 107274556924450953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkeletonHelmetSpritesheet_0: -5864857765303228168
+      SkeletonHelmetSpritesheet_1: 7728846281852391418
+      SkeletonHelmetSpritesheet_10: 3328531008015348137
+      SkeletonHelmetSpritesheet_11: -7287424190359265728
+      SkeletonHelmetSpritesheet_12: 2675253036442782403
+      SkeletonHelmetSpritesheet_13: 4473022967232061434
+      SkeletonHelmetSpritesheet_14: -8166304370071720247
+      SkeletonHelmetSpritesheet_15: 3889043360782701061
+      SkeletonHelmetSpritesheet_16: -5231395940280314675
+      SkeletonHelmetSpritesheet_17: 6975938864462975022
+      SkeletonHelmetSpritesheet_18: 107274556924450953
+      SkeletonHelmetSpritesheet_2: 8801754512839731348
+      SkeletonHelmetSpritesheet_3: -600207659355232449
+      SkeletonHelmetSpritesheet_4: -3742254561232494097
+      SkeletonHelmetSpritesheet_5: -9026854754382903345
+      SkeletonHelmetSpritesheet_6: 2776661793232050264
+      SkeletonHelmetSpritesheet_7: -7129927163531180633
+      SkeletonHelmetSpritesheet_8: -3529855587866862688
+      SkeletonHelmetSpritesheet_9: -616604628942047111
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

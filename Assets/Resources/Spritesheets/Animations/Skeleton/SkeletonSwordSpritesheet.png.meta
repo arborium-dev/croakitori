@@ -1,0 +1,650 @@
+fileFormatVersion: 2
+guid: fded8360cc39447408260bbe25b1f751
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7256860951457591321
+    second: SkeletonSwordSpritesheet_0
+  - first:
+      213: 4641199920970989992
+    second: SkeletonSwordSpritesheet_1
+  - first:
+      213: 5532819273600520535
+    second: SkeletonSwordSpritesheet_2
+  - first:
+      213: 5054330636815503593
+    second: SkeletonSwordSpritesheet_3
+  - first:
+      213: -2524402400379783774
+    second: SkeletonSwordSpritesheet_4
+  - first:
+      213: 5646101130370594311
+    second: SkeletonSwordSpritesheet_5
+  - first:
+      213: 2969949489687233997
+    second: SkeletonSwordSpritesheet_6
+  - first:
+      213: -7255087213016629457
+    second: SkeletonSwordSpritesheet_7
+  - first:
+      213: 6717974970922942432
+    second: SkeletonSwordSpritesheet_8
+  - first:
+      213: -6764073976874709187
+    second: SkeletonSwordSpritesheet_9
+  - first:
+      213: -4078121713909848039
+    second: SkeletonSwordSpritesheet_10
+  - first:
+      213: -8785048535289227520
+    second: SkeletonSwordSpritesheet_11
+  - first:
+      213: -8719651702971049724
+    second: SkeletonSwordSpritesheet_12
+  - first:
+      213: 6054818656279553944
+    second: SkeletonSwordSpritesheet_13
+  - first:
+      213: -6929970239024721739
+    second: SkeletonSwordSpritesheet_14
+  - first:
+      213: -6389159734933106040
+    second: SkeletonSwordSpritesheet_15
+  - first:
+      213: -6453438051033369683
+    second: SkeletonSwordSpritesheet_16
+  - first:
+      213: -7394427107921161121
+    second: SkeletonSwordSpritesheet_17
+  - first:
+      213: 8594411604331709733
+    second: SkeletonSwordSpritesheet_18
+  - first:
+      213: 3056255608242650884
+    second: SkeletonSwordSpritesheet_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 127
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef87f3c9637a4b90800000000000000
+      internalID: -7256860951457591321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 95
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a10c0decbad86040800000000000000
+      internalID: 4641199920970989992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 65
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 751d461b0d588cc40800000000000000
+      internalID: 5532819273600520535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 32
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e013c86fe6942640800000000000000
+      internalID: 5054330636815503593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 31
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a53837446587fcd0800000000000000
+      internalID: -2524402400379783774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 31
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 706bba1501bfa5e40800000000000000
+      internalID: 5646101130370594311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 32
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc509ad4351673920800000000000000
+      internalID: 2969949489687233997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 32
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2f3aad6e90c05b90800000000000000
+      internalID: -7255087213016629457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 31
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efb3d784aa0b3d50800000000000000
+      internalID: 6717974970922942432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 31
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f4bed3e8e2122a0800000000000000
+      internalID: -6764073976874709187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 32
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918a89378e99767c0800000000000000
+      internalID: -4078121713909848039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 0
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 007158ff6ec351680800000000000000
+      internalID: -8785048535289227520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 6
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 409d74f89f29df680800000000000000
+      internalID: -8719651702971049724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89763f2fc79070450800000000000000
+      internalID: 6054818656279553944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b017eeb8ccc3df90800000000000000
+      internalID: -6929970239024721739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 31
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882551282152557a0800000000000000
+      internalID: -6389159734933106040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 0
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3ba2cc848c076a0800000000000000
+      internalID: -6453438051033369683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5417d209b7b16990800000000000000
+      internalID: -7394427107921161121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 525cfa9a1db754770800000000000000
+      internalID: 8594411604331709733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 1
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f391078400a6a20800000000000000
+      internalID: 3056255608242650884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SkeletonSwordSpritesheet_0: -7256860951457591321
+      SkeletonSwordSpritesheet_1: 4641199920970989992
+      SkeletonSwordSpritesheet_10: -4078121713909848039
+      SkeletonSwordSpritesheet_11: -8785048535289227520
+      SkeletonSwordSpritesheet_12: -8719651702971049724
+      SkeletonSwordSpritesheet_13: 6054818656279553944
+      SkeletonSwordSpritesheet_14: -6929970239024721739
+      SkeletonSwordSpritesheet_15: -6389159734933106040
+      SkeletonSwordSpritesheet_16: -6453438051033369683
+      SkeletonSwordSpritesheet_17: -7394427107921161121
+      SkeletonSwordSpritesheet_18: 8594411604331709733
+      SkeletonSwordSpritesheet_19: 3056255608242650884
+      SkeletonSwordSpritesheet_2: 5532819273600520535
+      SkeletonSwordSpritesheet_3: 5054330636815503593
+      SkeletonSwordSpritesheet_4: -2524402400379783774
+      SkeletonSwordSpritesheet_5: 5646101130370594311
+      SkeletonSwordSpritesheet_6: 2969949489687233997
+      SkeletonSwordSpritesheet_7: -7255087213016629457
+      SkeletonSwordSpritesheet_8: 6717974970922942432
+      SkeletonSwordSpritesheet_9: -6764073976874709187
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
