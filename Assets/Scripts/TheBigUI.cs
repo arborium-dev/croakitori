@@ -14,6 +14,7 @@ public class TheBigUI : MonoBehaviour
     public Button theBigGarlic;
     public Button theBigZest;
     public Button theBigCumin;
+    public Button theBigCook;
     
     public void TheBigMSG()
     {
@@ -90,6 +91,22 @@ public class TheBigUI : MonoBehaviour
         {
             return true;
         }
+        
 
+    }
+    public void TheBigCook()
+    {
+        for (int i = 0; i < theBigTable.Length; i++)
+        { 
+            theBigTable[i] = false;
+        }
+        
+        theBigGarlic.interactable = true;
+        theBigGinger.interactable = true;
+        theBigMSG.interactable = true;
+        theBigZest.interactable = true;
+        theBigCumin.interactable = true;
+        theBigText.text = " - Spices -";
+        
     }
 }
