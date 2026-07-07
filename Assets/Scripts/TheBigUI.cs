@@ -6,107 +6,129 @@ using UnityEngine.UI;
 
 public class TheBigUI : MonoBehaviour
 {
+    private const int MAX_SPICES = 3;
+    private bool[] selectedSpices = new bool[5];
+    public TextMeshProUGUI recipeDisplayText;
+    public Button msgButton;
+    public Button gingerButton;
+    public Button garlicButton;
+    public Button zestButton;
+    public Button cuminButton;
+    public Button cookButton;
+    
+    [Header("Prefabs")]
+    [SerializeField] private GameObject ingredientPrefab;
+    
+    [Header("Spawn Settings")]
+    [SerializeField] private Transform ingredientSpawn;
 
-    private bool[] theBigTable = new bool[5];
-    public TextMeshProUGUI theBigText;
-    public Button theBigGinger;
-    public Button theBigMSG;
-    public Button theBigGarlic;
-    public Button theBigZest;
-    public Button theBigCumin;
-    public Button theBigCook;
+    [SerializeField] private float scatterForce = 3f;
     
-    public void TheBigMSG()
+    public void OnMsgSelected()
     {
-        if (TheBigCheck() == true)
+        if (CanAddMoreSpices())
         {
-            theBigTable[0] = true;
-            Debug.Log("The Big MSG");
-            theBigText.text += " - MSG                          ";
-            theBigMSG.interactable = false;
+            selectedSpices[0] = true;
+            Debug.Log("MSG added");
+            recipeDisplayText.text += " - MSG                          ";
+            msgButton.interactable = false;
         }
     }
     
-    public void TheBigGinger()
+    public void OnGingerSelected()
     {
-        if (TheBigCheck() == true)
+        if (CanAddMoreSpices())
         {
-            theBigTable[1] = true;
-            Debug.Log("The Big Ginger");
-            theBigText.text += " - Ginger                       ";
-            theBigGinger.interactable = false;
+            selectedSpices[1] = true;
+            Debug.Log("Ginger added");
+            recipeDisplayText.text += " - Ginger                       ";
+            gingerButton.interactable = false;
         }
     }
     
-    public void TheBigGarlic()
+    public void OnGarlicSelected()
     {
-        if (TheBigCheck() == true)
+        if (CanAddMoreSpices())
         {
-            theBigTable[2] = true;
-            Debug.Log("The Big Garlic");
-            theBigText.text += " - Garlic                       ";
-            theBigGarlic.interactable = false;
+            selectedSpices[2] = true;
+            Debug.Log("Garlic added");
+            recipeDisplayText.text += " - Garlic                       ";
+            garlicButton.interactable = false;
         }
     }
     
-    public void TheBigZest()
+    public void OnZestSelected()
     {
-        if (TheBigCheck() == true)
+        if (CanAddMoreSpices())
         {
-            theBigTable[3] = true;
-            Debug.Log("The Big Zest");
-            theBigText.text += " - Zest                         ";
-            theBigZest.interactable = false;
+            selectedSpices[3] = true;
+            Debug.Log("Zest added");
+            recipeDisplayText.text += " - Zest                         ";
+            zestButton.interactable = false;
         }
     }
     
-    public void TheBigCumin()
+    public void OnCuminSelected()
     {
-        if (TheBigCheck() == true)
+        if (CanAddMoreSpices())
         {
-            theBigTable[4] = true;
-            Debug.Log("The Big Cumin");
-            theBigText.text += " - Cumin                        ";
-            theBigCumin.interactable = false;
+            selectedSpices[4] = true;
+            Debug.Log("Cumin added");
+            recipeDisplayText.text += " - Cumin                        ";
+            cuminButton.interactable = false;
         }
     }
 
-    public bool TheBigCheck()
+    public bool CanAddMoreSpices()
     {
-        int theBigElements = 0;
-        for (int i = 0; i < theBigTable.Length; i++)
+        int selectedSpiceCount = 0;
+        for (int i = 0; i < selectedSpices.Length; i++)
         {
-
-            if (theBigTable[i])
+            if (selectedSpices[i])
             {
-                theBigElements++;
+                selectedSpiceCount++;
             }
-
         }
-        if (theBigElements >= 3)
+
+        return selectedSpiceCount < MAX_SPICES;
+    }
+
+    public void OnCookButtonPressed()
+    {
+        for (int i = 0; i < selectedSpices.Length; i++)
+        { 
+            selectedSpices[i] = false;
+        }
+        
+        garlicButton.interactable = true;
+        gingerButton.interactable = true;
+        msgButton.interactable = true;
+        zestButton.interactable = true;
+        cuminButton.interactable = true;
+        recipeDisplayText.text = " - Spices -";
+        SummonIngredient();
+    }
+
+    public void SummonIngredient()
+    {
+        if (ingredientPrefab != null)
         {
-            return false;
+            Vector3 spawnPosition = ingredientSpawn != null ? ingredientSpawn.position : Vector3.zero;
+            GameObject newIngredient = Instantiate(ingredientPrefab, spawnPosition, Quaternion.identity);
+            Rigidbody2D rb = newIngredient.GetComponent<Rigidbody2D>();
+
+            if (rb != null)
+            {
+                Vector2 randomDirection = Random.insideUnitCircle.normalized;
+                
+                rb.AddForce(randomDirection * scatterForce, ForceMode2D.Impuse);
+            }
+            
+            Debug.Log("Ingredient Spawned");
         }
         else
         {
-            return true;
+            Debug.LogWarning("Ingredient prefab is not assigned in the inspector.");
         }
-        
-
-    }
-    public void TheBigCook()
-    {
-        for (int i = 0; i < theBigTable.Length; i++)
-        { 
-            theBigTable[i] = false;
-        }
-        
-        theBigGarlic.interactable = true;
-        theBigGinger.interactable = true;
-        theBigMSG.interactable = true;
-        theBigZest.interactable = true;
-        theBigCumin.interactable = true;
-        theBigText.text = " - Spices -";
-        
     }
 }
