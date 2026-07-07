@@ -8,13 +8,19 @@ public class TheBigUI : MonoBehaviour
 {
     private const int MAX_SPICES = 3;
     private bool[] selectedSpices = new bool[5];
+    private string[] spiceButtonCombo = new string[5] { "↑↑→→", "→↓↑", "→←→←", "↑↓→←", "↑→↓←"};
+    
+    [Header("UI Elements")]
     public TextMeshProUGUI recipeDisplayText;
+    public TextMeshProUGUI buttonComboText;
+    
     public Button msgButton;
     public Button gingerButton;
     public Button garlicButton;
     public Button zestButton;
     public Button cuminButton;
     public Button cookButton;
+    private string ingredientComboCombined = "";
     
     [Header("Prefabs")]
     [SerializeField] private GameObject ingredientPrefab;
@@ -95,17 +101,27 @@ public class TheBigUI : MonoBehaviour
 
     public void OnCookButtonPressed()
     {
+        
         for (int i = 0; i < selectedSpices.Length; i++)
-        { 
+        {
+            if (selectedSpices[i])
+            {
+                ingredientComboCombined += spiceButtonCombo[i];
+            }
+
             selectedSpices[i] = false;
         }
-        
-        garlicButton.interactable = true;
-        gingerButton.interactable = true;
-        msgButton.interactable = true;
-        zestButton.interactable = true;
-        cuminButton.interactable = true;
+
+        buttonComboText.text = ingredientComboCombined;
+        //     
+        // garlicButton.interactable = true;
+        // gingerButton.interactable = true;
+        // msgButton.interactable = true;
+        // zestButton.interactable = true;
+        // cuminButton.interactable = true;
         recipeDisplayText.text = " - Spices -";
+        SummonIngredient();
+        SummonIngredient();
         SummonIngredient();
     }
 
@@ -121,7 +137,7 @@ public class TheBigUI : MonoBehaviour
             {
                 Vector2 randomDirection = Random.insideUnitCircle.normalized;
                 
-                rb.AddForce(randomDirection * scatterForce, ForceMode2D.Impuse);
+                rb.AddForce(randomDirection * scatterForce, ForceMode2D.Impulse);
             }
             
             Debug.Log("Ingredient Spawned");
