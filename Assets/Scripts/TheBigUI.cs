@@ -17,6 +17,8 @@ public class TheBigUI : MonoBehaviour
     [Header("UI Elements")]
     public TextMeshProUGUI recipeDisplayText;
     public TextMeshProUGUI buttonComboText;
+    public TextMeshProUGUI orderText;
+    public TextMeshProUGUI timerText;
     
     public Button msgButton;
     public Button gingerButton;
@@ -28,12 +30,26 @@ public class TheBigUI : MonoBehaviour
     
     private int currentComboLocation = 0;
 
+    [Header("Timer")]
+    [SerializeField] private float startingTimeSeconds = 60f;
+    [SerializeField] private float comboBonusSeconds = 15f;
+    private float _currentTimeSeconds;
+
     public int totalIngredientsCollected = 0;
 
     private InputAction _moveAction;
     private bool _ownsEnabledAction;
+    private int _currentOrderIndex;
 
-
+    private string[] customerOrders = new string[5]
+    {
+        "Humph. Let's see if you can cook without poisoning me. \nI want a rich, mouth-watering savoriness. Keep it bright and tangy, though. Oh, and add plenty of that stinky, pungent bulb so my breath keeps everyone away. Don't mess up.", // correct answer: MSG, Zest, Garlic
+        "It's chilly today, so warm my old bones. \nGive me a deep, earthy, smoky flavor... like good pond mud. I need a sharp, warming bite that clears the sinuses, too. And throw in that classic stink; I haven't offended enough people today.", // correct answer: Cumin, Ginger, Garlic
+        "Bah, beginner's luck. \nNow I'm craving that rich, lip-smacking savory depth. But you gotta balance that heavy, smoky earthiness with a bright pop of citrus. I need a sour kick to wake me up! Make it bland, and I toss it to the flies.", // correct answer: MSG, Cumin, Zest
+        "Bad cricket gave me a tummy ache.\nMake it clean. I need a zippy acidity to cut the muck, paired with a warm, stinging spice to settle my stomach. And add the stinky stuff! I want my breath pungent enough to peel paint.", // correct answer: Ginger, Zest, Garlic
+        "Still here? Let's see if you're a true chef. \nGive me that deep, musky smoke. Pair it with a sharp, sweet heat that bites back. Finally, I want that ultimate, rich umami depth that makes it impossible to stop eating. Don't expect a tip." // correct answer: Cumin, Ginger, MSG
+    };
+    
 
     [Header("Prefabs")]
     [SerializeField] private GameObject ingredientPrefab;
@@ -42,10 +58,19 @@ public class TheBigUI : MonoBehaviour
     [SerializeField] private Transform ingredientSpawn;
 
     [SerializeField] private float scatterForce = 3f;
+    
+    
 
     private void Awake()
     {
+        InitializeTimer();
+        InitializeOrders();
         ResolveMoveAction();
+    }
+
+    private void Update()
+    {
+        TickTimer();
     }
 
     private void OnEnable()
@@ -184,6 +209,8 @@ public class TheBigUI : MonoBehaviour
 
         if (ingredientComboCombined[currentComboLocation].ToString() != pressedSymbol)
         {
+            currentComboLocation = 0;
+            UpdateComboText();
             return;
         }
 
@@ -193,6 +220,8 @@ public class TheBigUI : MonoBehaviour
         if (currentComboLocation >= ingredientComboCombined.Length)
         {
             Debug.Log("Combo complete!");
+            AddComboBonusTime();
+            AdvanceToNextOrder();
             ResetMinigame();
         }
     }
@@ -298,5 +327,68 @@ public class TheBigUI : MonoBehaviour
         }
 
         return move.y > 0f ? "↑" : "↓";
+    }
+
+    private void InitializeTimer()
+    {
+        _currentTimeSeconds = Mathf.Max(0f, startingTimeSeconds);
+        UpdateTimerText();
+    }
+
+    private void TickTimer()
+    {
+        if (_currentTimeSeconds <= 0f)
+        {
+            return;
+        }
+
+        _currentTimeSeconds = Mathf.Max(0f, _currentTimeSeconds - Time.deltaTime);
+        UpdateTimerText();
+    }
+
+    private void AddComboBonusTime()
+    {
+        _currentTimeSeconds += comboBonusSeconds;
+        UpdateTimerText();
+    }
+
+    private void UpdateTimerText()
+    {
+        if (timerText == null)
+        {
+            return;
+        }
+
+        int minutes = Mathf.FloorToInt(_currentTimeSeconds / 60f);
+        int seconds = Mathf.FloorToInt(_currentTimeSeconds % 60f);
+        timerText.text = $"{minutes}:{seconds:00}";
+    }
+
+    private void InitializeOrders()
+    {
+        _currentOrderIndex = 0;
+        UpdateOrderText();
+    }
+
+    private void AdvanceToNextOrder()
+    {
+        if (customerOrders == null || customerOrders.Length == 0)
+        {
+            return;
+        }
+
+        _currentOrderIndex = Mathf.Min(_currentOrderIndex + 1, customerOrders.Length - 1);
+        UpdateOrderText();
+    }
+
+    private void UpdateOrderText()
+    {
+        if (orderText == null || customerOrders == null || customerOrders.Length == 0)
+        {
+            return;
+        }
+
+        _currentOrderIndex = Mathf.Clamp(_currentOrderIndex, 0, customerOrders.Length - 1);
+        orderText.text = customerOrders[_currentOrderIndex];
     }
 }
