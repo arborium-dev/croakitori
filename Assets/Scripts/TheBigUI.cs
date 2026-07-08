@@ -19,6 +19,7 @@ public class TheBigUI : MonoBehaviour
     public TextMeshProUGUI buttonComboText;
     public TextMeshProUGUI orderText;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI ratingText;
     
     public Button msgButton;
     public Button gingerButton;
@@ -40,6 +41,9 @@ public class TheBigUI : MonoBehaviour
     private InputAction _moveAction;
     private bool _ownsEnabledAction;
     private int _currentOrderIndex;
+    private bool[] _cookedSpiceSnapshot = new bool[5];
+    private bool _timerExpired;
+    private bool _scoreSubmitted;
 
     private string[] customerOrders = new string[5]
     {
@@ -49,7 +53,16 @@ public class TheBigUI : MonoBehaviour
         "Bad cricket gave me a tummy ache.\nMake it clean. I need a zippy acidity to cut the muck, paired with a warm, stinging spice to settle my stomach. And add the stinky stuff! I want my breath pungent enough to peel paint.", // correct answer: Ginger, Zest, Garlic
         "Still here? Let's see if you're a true chef. \nGive me that deep, musky smoke. Pair it with a sharp, sweet heat that bites back. Finally, I want that ultimate, rich umami depth that makes it impossible to stop eating. Don't expect a tip." // correct answer: Cumin, Ginger, MSG
     };
-    
+
+    private string[] ratingOptions = new string[4]
+    {
+        "amazing",
+        "decent",
+        "mid",
+        "ass"
+    };
+
+    private int totalScore = 0;
 
     [Header("Prefabs")]
     [SerializeField] private GameObject ingredientPrefab;
@@ -173,6 +186,17 @@ public class TheBigUI : MonoBehaviour
 
     public void OnCookButtonPressed() // this is basically the setup for the cooking minigame
     {
+        if (_timerExpired)
+        {
+            return;
+        }
+
+        Array.Copy(selectedSpices, _cookedSpiceSnapshot, selectedSpices.Length);
+        if (ratingText != null)
+        {
+            ratingText.text = string.Empty;
+        }
+
         ingredientComboCombined = string.Empty;
         currentComboLocation = 0;
         
@@ -202,6 +226,11 @@ public class TheBigUI : MonoBehaviour
 
     public void OnComboButtonPressed(string pressedSymbol)
     {
+        if (_timerExpired)
+        {
+            return;
+        }
+
         if (string.IsNullOrEmpty(ingredientComboCombined) || currentComboLocation >= ingredientComboCombined.Length)
         {
             return;
@@ -220,8 +249,13 @@ public class TheBigUI : MonoBehaviour
         if (currentComboLocation >= ingredientComboCombined.Length)
         {
             Debug.Log("Combo complete!");
+            UpdateRatingText();
             AddComboBonusTime();
             AdvanceToNextOrder();
+            if (_currentOrderIndex >= customerOrders.Length - 1)
+            {
+                SubmitScoreToSceneManager(totalScore);
+            }
             ResetMinigame();
         }
     }
@@ -332,18 +366,38 @@ public class TheBigUI : MonoBehaviour
     private void InitializeTimer()
     {
         _currentTimeSeconds = Mathf.Max(0f, startingTimeSeconds);
+        _timerExpired = false;
+        _scoreSubmitted = false;
         UpdateTimerText();
+    }
+
+    private void HandleTimerExpired()
+    {
+        if (_timerExpired)
+        {
+            return;
+        }
+
+        _timerExpired = true;
+        _currentTimeSeconds = 0f;
+        UpdateTimerText();
+        SubmitScoreToSceneManager(-1);
     }
 
     private void TickTimer()
     {
-        if (_currentTimeSeconds <= 0f)
+        if (_timerExpired)
         {
             return;
         }
 
         _currentTimeSeconds = Mathf.Max(0f, _currentTimeSeconds - Time.deltaTime);
         UpdateTimerText();
+
+        if (_currentTimeSeconds <= 0f)
+        {
+            HandleTimerExpired();
+        }
     }
 
     private void AddComboBonusTime()
@@ -368,6 +422,10 @@ public class TheBigUI : MonoBehaviour
     {
         _currentOrderIndex = 0;
         UpdateOrderText();
+        if (ratingText != null)
+        {
+            ratingText.text = string.Empty;
+        }
     }
 
     private void AdvanceToNextOrder()
@@ -390,5 +448,107 @@ public class TheBigUI : MonoBehaviour
 
         _currentOrderIndex = Mathf.Clamp(_currentOrderIndex, 0, customerOrders.Length - 1);
         orderText.text = customerOrders[_currentOrderIndex];
+    }
+
+    private void UpdateRatingText()
+    {
+        if (ratingText == null || customerOrders == null || customerOrders.Length == 0)
+        {
+            return;
+        }
+
+        int correctCount = CalculateCorrectSpiceCount();
+        totalScore += correctCount;
+        ratingText.text = GetRatingForCorrectCount(correctCount);
+    }
+
+    private void SubmitScoreToSceneManager(int score)
+    {
+        if (_scoreSubmitted)
+        {
+            return;
+        }
+
+        if (LocalSceneManager.Instance != null)
+        {
+            _scoreSubmitted = true;
+            LocalSceneManager.Instance.ReceiveTotalScore(score);
+        }
+        else
+        {
+            Debug.LogWarning($"Score {score} was ready to send, but no LocalSceneManager instance was available to receive it.");
+        }
+    }
+
+    private int CalculateCorrectSpiceCount()
+    {
+        if (customerOrders == null || customerOrders.Length == 0)
+        {
+            return 0;
+        }
+
+        bool[] correctSpices = GetCorrectSpiceMaskForOrder(_currentOrderIndex);
+        int correctCount = 0;
+
+        for (int i = 0; i < _cookedSpiceSnapshot.Length && i < correctSpices.Length; i++)
+        {
+            if (_cookedSpiceSnapshot[i] && correctSpices[i])
+            {
+                correctCount++;
+            }
+        }
+
+        return correctCount;
+    }
+
+    private bool[] GetCorrectSpiceMaskForOrder(int orderIndex)
+    {
+        bool[] mask = new bool[5];
+
+        switch (Mathf.Clamp(orderIndex, 0, customerOrders.Length - 1))
+        {
+            case 0:
+                mask[0] = true;
+                mask[2] = true;
+                mask[3] = true;
+                break;
+            case 1:
+                mask[1] = true;
+                mask[2] = true;
+                mask[4] = true;
+                break;
+            case 2:
+                mask[0] = true;
+                mask[3] = true;
+                mask[4] = true;
+                break;
+            case 3:
+                mask[1] = true;
+                mask[2] = true;
+                mask[3] = true;
+                break;
+            default:
+                mask[0] = true;
+                mask[1] = true;
+                mask[4] = true;
+                break;
+        }
+
+        return mask;
+    }
+
+    private string GetRatingForCorrectCount(int correctCount)
+    {
+        switch (Mathf.Clamp(correctCount, 0, 3))
+        {
+            case 3:
+                return ratingOptions[0];
+            case 2:
+                return ratingOptions[1];
+            case 1:
+                return ratingOptions[2];
+            default:
+                return ratingOptions[3];
+        }
     }
 }

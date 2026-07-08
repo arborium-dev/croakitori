@@ -399,15 +399,16 @@ MonoBehaviour:
   buttonComboText: {fileID: 1058113754}
   orderText: {fileID: 1466112973}
   timerText: {fileID: 820873087}
+  ratingText: {fileID: 2118056172}
   msgButton: {fileID: 1310120215}
   gingerButton: {fileID: 1231650267}
   garlicButton: {fileID: 263507154}
   zestButton: {fileID: 487135509}
   cuminButton: {fileID: 1181612795}
   cookButton: {fileID: 1580100357}
-  startingTimeSeconds: 60
+  startingTimeSeconds: 30
   comboBonusSeconds: 15
-  totalIngredientsCollected: 10
+  totalIngredientsCollected: 15
   ingredientPrefab: {fileID: 3799741413499951592, guid: ed8dd3a8b71f28e448d9f5142d23c4b2, type: 3}
   ingredientSpawn: {fileID: 464909783}
   scatterForce: 3
@@ -1242,6 +1243,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549181121}
   m_CullTransparentMesh: 1
+--- !u!1 &637374318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 637374320}
+  - component: {fileID: 637374319}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &637374319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637374318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 155937a4e4330a04e89bdc7fb0458b65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SceneManager
+--- !u!4 &637374320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637374318}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 484.85623, y: 207.21391, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &667996096
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,7 +1705,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u2191\u2193\u2192\u2190"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595663f73a1410d4391d03e6d6f983d5, type: 2}
   m_sharedMaterial: {fileID: -1128534048345629953, guid: 595663f73a1410d4391d03e6d6f983d5, type: 2}
@@ -3418,3 +3463,4 @@ SceneRoots:
   - {fileID: 2050157786}
   - {fileID: 464909783}
   - {fileID: 453032873}
+  - {fileID: 637374320}
