@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 325012636}
   m_Layer: 0
   m_Name: TheBigB
-  m_TagString: Untagged
+  m_TagString: Pan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,6 +474,7 @@ MonoBehaviour:
   zestButton: {fileID: 487135509}
   cuminButton: {fileID: 1181612795}
   cookButton: {fileID: 1580100357}
+  totalIngredientsCollected: 10
   ingredientPrefab: {fileID: 3799741413499951592, guid: ed8dd3a8b71f28e448d9f5142d23c4b2, type: 3}
   ingredientSpawn: {fileID: 464909783}
   scatterForce: 3
@@ -640,9 +641,10 @@ GameObject:
   - component: {fileID: 464909783}
   - component: {fileID: 464909782}
   - component: {fileID: 464909784}
+  - component: {fileID: 464909785}
   m_Layer: 0
   m_Name: Pan
-  m_TagString: Untagged
+  m_TagString: Pan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -734,7 +736,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PanController
   centerPullForce: 10
-  inputPushForce: 25
+  inputPushForce: 40
+--- !u!58 &464909785
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464909781}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
 --- !u!1 &487135507
 GameObject:
   m_ObjectHideFlags: 0
@@ -2339,7 +2377,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' - Spices -'
+  m_text: ' - Spices -    '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 595663f73a1410d4391d03e6d6f983d5, type: 2}
   m_sharedMaterial: {fileID: -1128534048345629953, guid: 595663f73a1410d4391d03e6d6f983d5, type: 2}

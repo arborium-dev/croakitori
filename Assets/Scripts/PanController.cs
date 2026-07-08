@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PanController : MonoBehaviour
 {
-    InputAction moveAction;
-    Vector2 moveValue = Vector2.zero;
+    private InputAction _moveAction;
+    private Vector2 _moveValue = Vector2.zero;
 
     [Header("Movement Settings")]
     [Tooltip("How strongly the ingredients are pulled to the center of the pan")]
@@ -15,15 +15,15 @@ public class PanController : MonoBehaviour
 
     void Start()
     {
-        moveAction = InputSystem.actions.FindAction("move");
+        _moveAction = InputSystem.actions.FindAction("move");
     }
 
     void Update()
     {
         // Read the input every frame
-        if (moveAction != null)
+        if (_moveAction != null)
         {
-            moveValue = moveAction.ReadValue<Vector2>();
+            _moveValue = _moveAction.ReadValue<Vector2>();
         }
     }
 
@@ -31,7 +31,7 @@ public class PanController : MonoBehaviour
     // ALWAYS put continuous AddForce calls in here!
     void FixedUpdate()
     {
-        foreach (Rigidbody2D rb in Ingredient.allIngredientRigidbodies)
+        foreach (Rigidbody2D rb in Ingredient.AllIngredientRigidbodies)
         {
             // Safety check in case an ingredient is in the middle of being destroyed
             if (rb == null) continue; 
@@ -46,7 +46,7 @@ public class PanController : MonoBehaviour
 
             // 2. APPLY PLAYER INPUT (Sloshing around)
             // Apply the player's movement input as a force to slosh them around in the pan
-            rb.AddForce(moveValue * inputPushForce);
+            rb.AddForce(_moveValue * inputPushForce);
         }
     }
 }
