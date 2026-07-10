@@ -202,6 +202,11 @@ public class TheBigUI : MonoBehaviour
         {
             return;
         }
+
+        if (selectedSpices[0] == false && selectedSpices[1] == false && selectedSpices[2] == false && selectedSpices[3] == false && selectedSpices[4] == false)
+        {
+            return;
+        }
         resetButton.interactable = false;
         cookButton.interactable = false;
 

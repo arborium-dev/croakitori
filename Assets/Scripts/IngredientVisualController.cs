@@ -11,8 +11,37 @@ public class Ingredient : MonoBehaviour
 
     void Awake()
     {
-        // Get the rigidbody attached to this specific ingredient
         _myRigidbody = GetComponent<Rigidbody2D>();
+    
+        // Load random sprite from Resources folder
+        Sprite[] ingredientSprites = Resources.LoadAll<Sprite>("Art/ingredients");
+        if (ingredientSprites.Length > 0)
+        {
+            int randomIndex = Random.Range(0, ingredientSprites.Length);
+            Sprite randomSprite = ingredientSprites[randomIndex];
+        
+            // Assign sprite to SpriteRenderer
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.sprite = randomSprite;
+        
+            CircleCollider2D _collider = GetComponent<CircleCollider2D>();
+        
+            // Store your intended final world diameter (e.g., 1.0f if radius is 0.5f)
+            float targetWorldDiameter = _collider.radius * 2f; 
+        
+            // Use the largest dimension of the sprite to prevent tall/wide sprites 
+            // from sticking out of the circle
+            float maxSpriteSize = Mathf.Max(randomSprite.bounds.size.x, randomSprite.bounds.size.y);
+        
+            // Scale the GameObject
+            float scale = targetWorldDiameter / maxSpriteSize;
+            transform.localScale = new Vector3(scale, scale, 1f);
+        
+            // FIX: Update the collider's local radius to match the sprite's local size.
+            // Because the GameObject is being scaled, the final world size of the 
+            // collider will perfectly equal your targetWorldDiameter!
+            _collider.radius = maxSpriteSize / 2f;
+        }
     }
 
     void OnEnable()
