@@ -27,6 +27,7 @@ public class TheBigUI : MonoBehaviour
     public Button zestButton;
     public Button cuminButton;
     public Button cookButton;
+    public Button resetButton;
     private string ingredientComboCombined = "";
     
     private int currentComboLocation = 0;
@@ -170,6 +171,17 @@ public class TheBigUI : MonoBehaviour
         }
     }
 
+    public void OnResetSelected()
+    {
+        Array.Clear(selectedSpices, 0, selectedSpices.Length);
+        recipeDisplayText.text = " - Spices -    ";
+        msgButton.interactable = true;
+        gingerButton.interactable = true;
+        garlicButton.interactable = true;
+        zestButton.interactable = true;
+        cuminButton.interactable = true;
+    }
+
     public bool CanAddMoreSpices()
     {
         int selectedSpiceCount = 0;
@@ -181,7 +193,7 @@ public class TheBigUI : MonoBehaviour
             }
         }
 
-        return selectedSpiceCount < MAX_SPICES;
+        return (selectedSpiceCount < MAX_SPICES) && cookButton.interactable;
     }
 
     public void OnCookButtonPressed() // this is basically the setup for the cooking minigame
@@ -190,6 +202,8 @@ public class TheBigUI : MonoBehaviour
         {
             return;
         }
+        resetButton.interactable = false;
+        cookButton.interactable = false;
 
         Array.Copy(selectedSpices, _cookedSpiceSnapshot, selectedSpices.Length);
         if (ratingText != null)
@@ -283,6 +297,8 @@ public class TheBigUI : MonoBehaviour
         msgButton.interactable = true;
         zestButton.interactable = true;
         cuminButton.interactable = true;
+        resetButton.interactable = true;
+        cookButton.interactable = true;
     }
 
     private void UpdateComboText()
