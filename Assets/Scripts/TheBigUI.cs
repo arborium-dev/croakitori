@@ -36,6 +36,16 @@ public class TheBigUI : MonoBehaviour
     [SerializeField] private float startingTimeSeconds = 60f;
     [SerializeField] private float comboBonusSeconds = 15f;
     private float _currentTimeSeconds;
+    
+    [SerializeField] private float flashThreshold = 15f;
+    [SerializeField] private Color normalTimerColor = Color.white;
+    [SerializeField] private Color flashTimerColor = Color.red;
+    [SerializeField] private float flashSpeed = 3f; // Higher is faster
+    
+    public float CurrentTimeSeconds // this is so other scripts can read Current Time
+    {
+        get { return _currentTimeSeconds; }
+    }
 
     public int totalIngredientsCollected = 0;
 
@@ -437,6 +447,21 @@ public class TheBigUI : MonoBehaviour
         int minutes = Mathf.FloorToInt(_currentTimeSeconds / 60f);
         int seconds = Mathf.FloorToInt(_currentTimeSeconds % 60f);
         timerText.text = $"{minutes}:{seconds:00}";
+
+        // --- FLASHING LOGIC ---
+        if (_currentTimeSeconds <= flashThreshold && _currentTimeSeconds > 0)
+        {
+            // Mathf.PingPong bounces a value back and forth between 0 and 1 over time.
+            float flashLerp = Mathf.PingPong(Time.time * flashSpeed, 1f);
+            
+            // Color.Lerp blends the two colors based on that 0 to 1 value
+            timerText.color = Color.Lerp(normalTimerColor, flashTimerColor, flashLerp);
+        }
+        else
+        {
+            // Ensure the text stays its normal color when above 15 seconds (or at 0)
+            timerText.color = normalTimerColor;
+        }
     }
 
     private void InitializeOrders()
