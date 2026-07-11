@@ -25,7 +25,6 @@ public class MusicManager : MonoBehaviour
                 // This calculates a percentage from 0 to 1 based on how close time is to 0
                 // float timePercentage = uiScript.CurrentTimeSeconds / timeThreshold; 
 
-                // Smoothly blends from normalSpeed to fastSpeed as time goes down
                 // music.pitch = Mathf.Lerp(fastSpeed, normalSpeed, timePercentage);
             }
             else if (uiScript.CurrentTimeSeconds > timeThreshold)

@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class Ingredient : MonoBehaviour
 {
-    // This is the magical STATIC list. Because it's static, there is only ONE 
-    // copy of this list in the entire game, and all ingredients share it.
+    
     public static List<Rigidbody2D> AllIngredientRigidbodies = new List<Rigidbody2D>();
 
     private Rigidbody2D _myRigidbody;
