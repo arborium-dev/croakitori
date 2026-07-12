@@ -10,6 +10,18 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 8f;
 
+    [Tooltip("How fast the player reaches top speed from a standstill")]
+    [SerializeField]
+    private float acceleration = 80f;
+
+    [Tooltip("How fast the player stops when there is no input")]
+    [SerializeField]
+    private float deceleration = 60f;
+
+    [Tooltip("How fast the player changes direction when moving opposite to input")]
+    [SerializeField]
+    private float turnSpeed = 120f;
+
     [SerializeField]
     private float jumpSpeed = 12f;
 
@@ -25,6 +37,10 @@ public class PlayerPlatforming : MonoBehaviour
 
     [SerializeField]
     private float jumpBufferTime = 0.1f;
+
+    [Tooltip("Multiplier applied to upward velocity when the jump button is released early. Lower = shorter hops.")]
+    [SerializeField, Range(0f, 1f)]
+    private float jumpCutMultiplier = 0.5f;
 
     [Header("Collision")]
     [SerializeField]
@@ -60,13 +76,14 @@ public class PlayerPlatforming : MonoBehaviour
     private readonly RaycastHit2D[] _castHits = new RaycastHit2D[8];
 
     private float _moveInput;
+    private bool _isJumpHeld;
   
     private Vector2 _velocity;
     
-
     private float _coyoteTimer;
     private float _jumpBufferTimer;
     private bool _ownsEnabledActions;
+    private bool _isJumping;
 
     private void Awake()
     {
@@ -114,6 +131,9 @@ public class PlayerPlatforming : MonoBehaviour
     {
         _moveInput = _moveAction != null ? _moveAction.ReadValue<Vector2>().x : 0f;
         
+        // Track whether the jump button is currently being held down
+        _isJumpHeld = _jumpAction != null && _jumpAction.IsPressed();
+        
         if (_jumpAction != null && _jumpAction.WasPressedThisFrame())
         {
             _jumpBufferTimer = jumpBufferTime;
@@ -135,21 +155,58 @@ public class PlayerPlatforming : MonoBehaviour
             if (_velocity.y < 0f)
             {
                 _velocity.y = 0f;
+                _isJumping = false; // reset jumping state when grounded
             }
         }
 
+        // initializing the jump
         if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
         {
             _velocity.y = jumpSpeed;
             _jumpBufferTimer = 0f;
             _coyoteTimer = 0f;
-            
+            _isJumping = true; // we are now actively in a jump arc
         }
 
-        _velocity.x = _moveInput * moveSpeed;
+        // --- VARIABLE JUMP HEIGHT ---
+        // If we are jumping up, but the player let go of the jump button early...
+        if (_isJumping && !_isJumpHeld && _velocity.y > 0f)
+        {
+            // Cut the upward velocity
+            _velocity.y *= jumpCutMultiplier;
+            
+            // Set to false so we only cut the velocity once per jump
+            _isJumping = false; 
+        }
+
+        // If the player begins falling naturally, they are no longer in an upward jump arc
+        if (_velocity.y <= 0f)
+        {
+            _isJumping = false;
+        }
+
+        // --- HORIZONTAL MOVEMENT ---
+        float targetVelocityX = _moveInput * moveSpeed;
+        float accelRate;
+
+        if (Mathf.Abs(_moveInput) < 0.01f)
+        {
+            accelRate = deceleration;
+        } 
+        else if (Mathf.Abs(_velocity.x) > 0.01f && Mathf.Sign(_moveInput) != Mathf.Sign(_velocity.x))
+        {
+            accelRate = turnSpeed;
+        }
+        else
+        {
+            accelRate = acceleration;
+        }
+
+        _velocity.x = Mathf.MoveTowards(_velocity.x, targetVelocityX, accelRate * dt);
+        
+        // --- GRAVITY ---
         _velocity.y = Mathf.Max(_velocity.y - (gravity * dt), -maxFallSpeed);
         
-
         Vector2 delta = _velocity * dt;
         MoveHorizontal(ref delta.x);
         MoveVertical(ref delta.y);
@@ -260,8 +317,5 @@ public class PlayerPlatforming : MonoBehaviour
         {
             Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
         }
-
-        
     }
-    
 }

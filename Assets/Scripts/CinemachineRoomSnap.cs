@@ -1,5 +1,5 @@
 using UnityEngine;
-using Unity.Cinemachine; 
+using Unity.Cinemachine;
 
 public class CinemachineRoomSnap : MonoBehaviour
 {
@@ -8,9 +8,9 @@ public class CinemachineRoomSnap : MonoBehaviour
     void Start()
     {
         vcam = GetComponent<CinemachineCamera>();
-        
+
         // Force priority to 0 at the start of the game so no cameras are active yet
-        vcam.Priority = 0; 
+        vcam.Priority = 0;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -31,3 +31,4 @@ public class CinemachineRoomSnap : MonoBehaviour
         }
     }
 }
+
