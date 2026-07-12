@@ -36,10 +36,10 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField]
     private float groundProbeDistance = 0.08f;
 
-    [Header("Climb")]
     [SerializeField]
-    private LayerMask climbLayer;
+    private float wallProbeDistance = 0.08f;
 
+    [Header("Climb")]
     [SerializeField]
     private float climbSpeed = 6f;
 
@@ -64,7 +64,6 @@ public class PlayerPlatforming : MonoBehaviour
     private InputAction _climbAction;
 
     private Rigidbody2D _rb;
-    private Collider2D _collider;
     private ContactFilter2D _collisionFilter;
     private readonly RaycastHit2D[] _castHits = new RaycastHit2D[8];
 
@@ -80,7 +79,6 @@ public class PlayerPlatforming : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _collider = GetComponent<Collider2D>();
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
 
@@ -139,10 +137,11 @@ public class PlayerPlatforming : MonoBehaviour
     private void FixedUpdate()
     {
         float dt = Time.fixedDeltaTime;
-        bool touchingClimb = IsTouchingClimbable();
-        _isClimbing = touchingClimb && Mathf.Abs(_climbInput) > 0.01f;
+        bool grounded = IsGrounded();
+        bool pressingIntoWall = IsPressingIntoWall();
+        _isClimbing = !grounded && pressingIntoWall && Mathf.Abs(_climbInput) > 0.01f;
 
-        if (IsGrounded())
+        if (grounded)
         {
             _coyoteTimer = coyoteTime;
             if (_velocity.y < 0f)
@@ -246,9 +245,24 @@ public class PlayerPlatforming : MonoBehaviour
         return false;
     }
 
-    private bool IsTouchingClimbable()
+    private bool IsPressingIntoWall()
     {
-        return _collider != null && _collider.IsTouchingLayers(climbLayer);
+        if (Mathf.Abs(_moveInput) < 0.01f)
+        {
+            return false;
+        }
+
+        float direction = Mathf.Sign(_moveInput);
+        int hitCount = _rb.Cast(new Vector2(direction, 0f), _collisionFilter, _castHits, wallProbeDistance);
+        for (int i = 0; i < hitCount; i++)
+        {
+            if (Mathf.Abs(_castHits[i].normal.x) > WallNormalThreshold)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     private void ResolveActions()

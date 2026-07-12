@@ -484,26 +484,6 @@ Tilemap:
   m_GameObject: {fileID: 1665657785}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: 10, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 24
-      m_TileSpriteIndex: 24
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 11, y: -11, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 25
-      m_TileSpriteIndex: 25
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: -18, y: -10, z: 0}
     second:
       serializedVersion: 2
@@ -887,8 +867,8 @@ Tilemap:
   - first: {x: -7, y: -9, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 25
+      m_TileSpriteIndex: 25
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -2200,7 +2180,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5418ebb73765a954dba041a9a9e50591, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: f17a8650cdb1f464fafe50ca73173d19, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: aee79fdde7a981f4dbe015437b1f27bd, type: 2}
   - m_RefCount: 92
     m_Data: {fileID: 11400000, guid: 0bd74360331a5514db82a9d021fc5da4, type: 2}
@@ -2244,7 +2224,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5763588f04cd66c458274a876ff27b32, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 8aba8ed0ee119a740bb986e1df1a5c6f, type: 2}
-  - m_RefCount: 8
+  - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 7e137d009ba633546b7591826c851726, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: baa48b50a70187741bd20a77cca3e954, type: 2}
@@ -2279,7 +2259,7 @@ Tilemap:
     m_Data: {fileID: -1903454786, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: -777670494, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 2
     m_Data: {fileID: -2009132090, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 92
     m_Data: {fileID: 4794510293436115577, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
@@ -2323,7 +2303,7 @@ Tilemap:
     m_Data: {fileID: -1364448923, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -8218422151308288996, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
-  - m_RefCount: 8
+  - m_RefCount: 7
     m_Data: {fileID: 477008721, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 1263481616, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
@@ -2354,7 +2334,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 1043186119, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 171
+  - m_RefCount: 169
     m_Data:
       e00: 1
       e01: 0
@@ -2373,7 +2353,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 171
+  - m_RefCount: 169
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -2581,17 +2561,15 @@ MonoBehaviour:
     m_Bits: 64
   skinWidth: 0.02
   groundProbeDistance: 0.08
-  climbLayer:
-    serializedVersion: 2
-    m_Bits: 64
+  wallProbeDistance: 0.08
   climbSpeed: 6
   playerInput: {fileID: 0}
   inputActions: {fileID: 0}
   moveActionName: Move
   jumpActionName: Jump
   climbActionName: Climb
---- !u!58 &1741090426
-CircleCollider2D:
+--- !u!61 &1741090426
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2624,8 +2602,18 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.3}
-  m_Radius: 0.8026285
+  m_Offset: {x: 0.007993162, y: -0.24778801}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.875, y: 2.125}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.3794242, y: 1.629424}
+  m_EdgeRadius: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
