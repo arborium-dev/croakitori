@@ -1,3 +1,7 @@
+// CinemachineRoomSnap.cs
+// This script adds room snapping, much like Celeste
+// In order for this to work, a new cinemachine camera has to be added for each room. Example cameras are labeled Room #
+
 using UnityEngine;
 using Unity.Cinemachine;
 

@@ -1,3 +1,7 @@
+// MainMenuManager.cs
+// Manages the main menu
+// TODO: add video support to this script, as thats what the background for the main menu is (maybe this can be done in Unity itself?)
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

@@ -1,3 +1,6 @@
+// AspectRatioEnforcer.cs
+// This script enforces a specific aspect ratio for the camera, adding letterboxing as required. (Target ratio: 16:9)
+
 using UnityEngine;
 
 public class AspectRatioEnforcer : MonoBehaviour
@@ -39,4 +42,4 @@ public class AspectRatioEnforcer : MonoBehaviour
             cam.rect = rect;
         }
     }
-}
+} 

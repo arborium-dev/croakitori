@@ -1,3 +1,7 @@
+// DoesEverything.cs
+// Originally designed to just control the GUI in the cooking menu, this script now controls the buttons, timer, ingredient selection, scoring, orders, rating, and spawning objects on the pan.
+// All functions are correctly labeled for easy access though
+
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;

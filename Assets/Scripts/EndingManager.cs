@@ -1,4 +1,6 @@
 // THIS CODE IS ALL UNTESTED
+// EndingManager.cs
+// This loads a video based on the score passed through from DoesEverything.cs
 
 using UnityEngine;
 using UnityEngine.Video;

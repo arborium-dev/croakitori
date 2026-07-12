@@ -1,3 +1,6 @@
+// IngredientVisualController.cs
+// This helps manage hitboxes and sprite sizes for spawning objects on the pan
+
 using System.Collections.Generic;
 using UnityEngine;
 

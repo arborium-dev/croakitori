@@ -1,3 +1,7 @@
+// LocalSceneManager.cs
+// ONLY TO BE USED IN THE COOKING SCENE, this script passes of the score to the ending and switches the scene to the ending
+// should probably rename this file tbh, considering it litterally only has one purpose
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 

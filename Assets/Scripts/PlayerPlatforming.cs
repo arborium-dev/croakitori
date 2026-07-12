@@ -1,3 +1,6 @@
+// PlayerPlatforming.cs
+// This script controls how the player physics and collisions function
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -33,7 +36,7 @@ public class PlayerPlatforming : MonoBehaviour
 
     [Header("Jump Forgiveness")]
     [SerializeField]
-    private float coyoteTime = 0.1f;
+    private float coyoteTime = 0.1f; 
 
     [SerializeField]
     private float jumpBufferTime = 0.1f;

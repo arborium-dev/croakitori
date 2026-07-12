@@ -1,9 +1,13 @@
+// MusicManager.cs
+// This manages music speeding up and slowing down in the cooking minigame
+// Should not be used anywhere else
+
 using UnityEngine;
 
 public class MusicManager : MonoBehaviour
 {
     public AudioSource music;
-    public DoesEverything uiScript; // Reference to your UI script
+    public DoesEverything uiScript; // Reference to UI script
 
     [Header("Audio Settings")]
     public float normalSpeed = 1.0f;

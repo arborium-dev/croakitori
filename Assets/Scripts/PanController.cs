@@ -1,3 +1,7 @@
+// PanController.cs
+// Moves items around in the pan
+// Honestly this looks kind of bad, might completly remake the physics for this if I have time
+
 using UnityEngine;
 using UnityEngine.InputSystem;
 
