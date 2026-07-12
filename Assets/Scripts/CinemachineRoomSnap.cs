@@ -1,21 +1,23 @@
 using UnityEngine;
-using Unity.Cinemachine; // The namespace changed in the new version
+using Unity.Cinemachine; 
 
 public class CinemachineRoomSnap : MonoBehaviour
 {
-    // The component is now called CinemachineCamera instead of CinemachineVirtualCamera
     private CinemachineCamera vcam;
 
     void Start()
     {
         vcam = GetComponent<CinemachineCamera>();
+        
+        // Force priority to 0 at the start of the game so no cameras are active yet
+        vcam.Priority = 0; 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            // Boost this camera's priority so Cinemachine switches to it
+            Debug.Log("Player successfully entered: " + gameObject.name); // <--- DEBUG TEST
             vcam.Priority = 10;
         }
     }
@@ -24,7 +26,7 @@ public class CinemachineRoomSnap : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Drop priority when the player leaves so the next room can take over
+            Debug.Log("Player left: " + gameObject.name); // <--- DEBUG TEST
             vcam.Priority = 0;
         }
     }
