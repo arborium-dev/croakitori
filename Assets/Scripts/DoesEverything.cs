@@ -6,12 +6,12 @@ using TMPro;
 using UnityEngine.UI;
 
 
-public class TheBigUI : MonoBehaviour
+public class DoesEverything : MonoBehaviour
 {
     private const int MAX_SPICES = 3;
     private bool[] selectedSpices = new bool[5];
     private string[] spiceButtonCombo = new string[5] { "↑↑→→", "→↓↑←", "→←→←", "↑↓→←", "↑→↓←"};
-    private const string HighlightColor = "#FFD54A";
+    private const string HighlightColor = "#FF0000";
     private const string NormalColor = "#FFFFFF";
     
     [Header("UI Elements")]

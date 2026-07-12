@@ -3,7 +3,7 @@ using UnityEngine;
 public class MusicManager : MonoBehaviour
 {
     public AudioSource music;
-    public TheBigUI uiScript; // Reference to your UI script
+    public DoesEverything uiScript; // Reference to your UI script
 
     [Header("Audio Settings")]
     public float normalSpeed = 1.0f;

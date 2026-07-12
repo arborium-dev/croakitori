@@ -23,7 +23,7 @@ public class EndingManager : MonoBehaviour
         
         PlayEndingCutscene(_totalScore);
     }
-
+    
     private void PlayEndingCutscene(int score)
     {
         // decide on cutscene based on score
