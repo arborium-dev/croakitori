@@ -10,7 +10,7 @@ public class TheBigUI : MonoBehaviour
 {
     private const int MAX_SPICES = 3;
     private bool[] selectedSpices = new bool[5];
-    private string[] spiceButtonCombo = new string[5] { "↑↑→→", "→↓↑", "→←→←", "↑↓→←", "↑→↓←"};
+    private string[] spiceButtonCombo = new string[5] { "↑↑→→", "→↓↑←", "→←→←", "↑↓→←", "↑→↓←"};
     private const string HighlightColor = "#FFD54A";
     private const string NormalColor = "#FFFFFF";
     
@@ -31,7 +31,7 @@ public class TheBigUI : MonoBehaviour
     private string ingredientComboCombined = "";
     
     private int currentComboLocation = 0;
-
+ 
     [Header("Timer")]
     [SerializeField] private float startingTimeSeconds = 60f;
     [SerializeField] private float comboBonusSeconds = 15f;
@@ -278,13 +278,25 @@ public class TheBigUI : MonoBehaviour
         if (currentComboLocation >= ingredientComboCombined.Length)
         {
             Debug.Log("Combo complete!");
+
+            // Determine whether the order we just cooked was the final one
+            bool justCookedFinalOrder = (_currentOrderIndex >= customerOrders.Length - 1);
+
             UpdateRatingText();
             AddComboBonusTime();
-            AdvanceToNextOrder();
-            if (_currentOrderIndex >= customerOrders.Length - 1)
+
+            if (justCookedFinalOrder)
             {
+                Debug.Log($"Finished final order (index {_currentOrderIndex}). Submitting score.");
                 SubmitScoreToSceneManager(totalScore);
             }
+            else
+            {
+                // Not the final order: advance to the next one and continue playing
+                AdvanceToNextOrder();
+                Debug.Log($"Advanced to next order. Current Order Index: {_currentOrderIndex}");
+            }
+
             ResetMinigame();
         }
     }
