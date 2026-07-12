@@ -5332,16 +5332,6 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 10, y: 13, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 188
-      m_TileSpriteIndex: 57
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 14, y: 13, z: 0}
     second:
       serializedVersion: 2
@@ -7560,8 +7550,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0f4dfbd86ace9f34c97eb5ccdf50cb07, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: c9c9a05c0cd76fc40a91a628d8af4106, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: 4ae47c7d2f37d4c4db70e9e2fbe8deec, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   m_TileSpriteArray:
   - m_RefCount: 5
     m_Data: {fileID: 1138375207, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
@@ -7677,8 +7667,8 @@ Tilemap:
     m_Data: {fileID: -1807896041, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 1551926293, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1994590052, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: -736461209, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   - m_RefCount: 2
@@ -7942,7 +7932,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: -1529721828, guid: cd311a8eeb957224a8cbc54229c39f81, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 558
+  - m_RefCount: 557
     m_Data:
       e00: 1
       e01: 0
@@ -7961,7 +7951,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 558
+  - m_RefCount: 557
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -8167,6 +8157,7 @@ MonoBehaviour:
   maxFallSpeed: 22
   coyoteTime: 0.1
   jumpBufferTime: 0.1
+  jumpCutMultiplier: 0.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
