@@ -31,7 +31,7 @@ public class DoesEverything : MonoBehaviour
     private string ingredientComboCombined = "";
     
     private int currentComboLocation = 0;
- 
+  
     [Header("Timer")]
     [SerializeField] private float startingTimeSeconds = 60f;
     [SerializeField] private float comboBonusSeconds = 15f;
@@ -196,7 +196,7 @@ public class DoesEverything : MonoBehaviour
     {
         int selectedSpiceCount = 0;
         for (int i = 0; i < selectedSpices.Length; i++)
-        {
+        { 
             if (selectedSpices[i])
             {
                 selectedSpiceCount++;

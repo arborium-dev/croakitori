@@ -36,13 +36,6 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField]
     private float groundProbeDistance = 0.08f;
 
-    [Header("Climb")]
-    [SerializeField]
-    private LayerMask climbLayer;
-
-    [SerializeField]
-    private float climbSpeed = 6f;
-
     [Header("Input")]
     [SerializeField]
     private PlayerInput playerInput;
@@ -56,12 +49,10 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField]
     private string jumpActionName = "Jump";
 
-    [SerializeField]
-    private string climbActionName = "Climb";
 
     private InputAction _moveAction;
     private InputAction _jumpAction;
-    private InputAction _climbAction;
+   
 
     private Rigidbody2D _rb;
     private Collider2D _collider;
@@ -69,9 +60,9 @@ public class PlayerPlatforming : MonoBehaviour
     private readonly RaycastHit2D[] _castHits = new RaycastHit2D[8];
 
     private float _moveInput;
-    private float _climbInput;
+  
     private Vector2 _velocity;
-    private bool _isClimbing;
+    
 
     private float _coyoteTimer;
     private float _jumpBufferTimer;
@@ -103,7 +94,7 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _moveAction.Enable();
             _jumpAction.Enable();
-            _climbAction?.Enable();
+           
             _ownsEnabledActions = true;
         }
     }
@@ -114,7 +105,7 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _moveAction.Disable();
             _jumpAction.Disable();
-            _climbAction?.Disable();
+            
             _ownsEnabledActions = false;
         }
     }
@@ -122,8 +113,7 @@ public class PlayerPlatforming : MonoBehaviour
     private void Update()
     {
         _moveInput = _moveAction != null ? _moveAction.ReadValue<Vector2>().x : 0f;
-        _climbInput = ReadClimbInput();
-
+        
         if (_jumpAction != null && _jumpAction.WasPressedThisFrame())
         {
             _jumpBufferTimer = jumpBufferTime;
@@ -135,13 +125,10 @@ public class PlayerPlatforming : MonoBehaviour
 
         _coyoteTimer -= Time.deltaTime;
     }
-
+    
     private void FixedUpdate()
     {
         float dt = Time.fixedDeltaTime;
-        bool touchingClimb = IsTouchingClimbable();
-        _isClimbing = touchingClimb && Mathf.Abs(_climbInput) > 0.01f;
-
         if (IsGrounded())
         {
             _coyoteTimer = coyoteTime;
@@ -156,18 +143,12 @@ public class PlayerPlatforming : MonoBehaviour
             _velocity.y = jumpSpeed;
             _jumpBufferTimer = 0f;
             _coyoteTimer = 0f;
-            _isClimbing = false;
+            
         }
 
         _velocity.x = _moveInput * moveSpeed;
-        if (_isClimbing)
-        {
-            _velocity.y = _climbInput * climbSpeed;
-        }
-        else
-        {
-            _velocity.y = Mathf.Max(_velocity.y - (gravity * dt), -maxFallSpeed);
-        }
+        _velocity.y = Mathf.Max(_velocity.y - (gravity * dt), -maxFallSpeed);
+        
 
         Vector2 delta = _velocity * dt;
         MoveHorizontal(ref delta.x);
@@ -245,11 +226,7 @@ public class PlayerPlatforming : MonoBehaviour
 
         return false;
     }
-
-    private bool IsTouchingClimbable()
-    {
-        return _collider != null && _collider.IsTouchingLayers(climbLayer);
-    }
+    
 
     private void ResolveActions()
     {
@@ -262,21 +239,21 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _moveAction = playerInput.actions.FindAction(moveActionName);
             _jumpAction = playerInput.actions.FindAction(jumpActionName);
-            _climbAction = playerInput.actions.FindAction(climbActionName);
+            
         }
 
-        if ((_moveAction == null || _jumpAction == null || _climbAction == null) && inputActions != null)
+        if ((_moveAction == null || _jumpAction == null) && inputActions != null)
         {
             _moveAction ??= inputActions.FindAction(moveActionName);
             _jumpAction ??= inputActions.FindAction(jumpActionName);
-            _climbAction ??= inputActions.FindAction(climbActionName);
+            
         }
 
-        if (_moveAction == null || _jumpAction == null || _climbAction == null)
+        if (_moveAction == null || _jumpAction == null)
         {
             _moveAction ??= InputSystem.actions?.FindAction(moveActionName);
             _jumpAction ??= InputSystem.actions?.FindAction(jumpActionName);
-            _climbAction ??= InputSystem.actions?.FindAction(climbActionName);
+            
         }
 
         if (_moveAction == null || _jumpAction == null)
@@ -284,34 +261,7 @@ public class PlayerPlatforming : MonoBehaviour
             Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
         }
 
-        if (_climbAction == null)
-        {
-            Debug.LogWarning("PlayerPlatforming: Could not find Climb action.", this);
-        }
+        
     }
-
-    private float ReadClimbInput()
-    {
-        if (_climbAction == null)
-        {
-            return 0f;
-        }
-
-        // Some bindings are scalar keys/buttons (float), others are sticks/composites (Vector2).
-        InputControl activeControl = _climbAction.activeControl;
-        if (activeControl != null && activeControl.valueType == typeof(Vector2))
-        {
-            Vector2 climbVector = _climbAction.ReadValue<Vector2>();
-            return Mathf.Clamp(climbVector.y, -1f, 1f);
-        }
-
-        if (activeControl != null && activeControl.valueType == typeof(float))
-        {
-            float axis = _climbAction.ReadValue<float>();
-            return Mathf.Clamp(axis, -1f, 1f);
-        }
-
-        // Fallback for controls that don't report a value type as expected.
-        return _climbAction.IsPressed() ? 1f : 0f;
-    }
+    
 }
