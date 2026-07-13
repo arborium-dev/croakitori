@@ -1,0 +1,28 @@
+﻿ok so basically
+
+menu
+- trailer video
+- settings?
+ - audio
+ - fullscreen
+
+platforming
+- grapple mechanic
+- checkpoints
+- ingredients
+- climbing?
+- parallax background
+
+cutscenes
+- cooking tutorial
+- opening cutscene
+- ending cutscenes
+ - good ending
+ - good ending +
+ - bad ending
+ - timer ending (bad ending but with a timer)
+ 
+misc
+- text tutorials
+- find music for everything
+- player animations

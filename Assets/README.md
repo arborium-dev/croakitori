@@ -19,7 +19,6 @@ Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Daz
 - Arrow Keys (or WASD) to move
 - C to jump
 - X to extend your toungue (release to pull yourself to the point of contact)
-- Z to climb
 
 ### How to Play:
 #### Cooking Minigame:

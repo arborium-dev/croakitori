@@ -68,10 +68,19 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField]
     private string jumpActionName = "Jump";
 
+    [Header("Grapple Logic")]
+    [SerializeField] private string grappleActionName = "Grapple";
 
+    [SerializeField] private float grappleMaxDistance = 12f;
+
+    [SerializeField] private float grapplePullSpeed = 25f;
+
+    // Multiplies normal jump speed if you jump out of a grapple, might remove this tbh because its kind of level design breaking
+    [SerializeField] private float grappleJumpBoost = 1.25f;
+    
     private InputAction _moveAction;
     private InputAction _jumpAction;
-   
+    private InputAction _grappleAction;
 
     private Rigidbody2D _rb;
     private Collider2D _collider;
@@ -87,6 +96,19 @@ public class PlayerPlatforming : MonoBehaviour
     private float _jumpBufferTimer;
     private bool _ownsEnabledActions;
     private bool _isJumping;
+    
+    // --- GRAPPLE STATES ---
+    private bool _isGrappleHeld;
+    private bool _wasGrappleHeld;
+    private bool _canGrapple = true; 
+    private bool _isGrappling; 
+    private bool _isGrappleMissed; 
+    private bool _isGrappleRetracting; 
+    private float _grappleMissDistance;
+    private Vector2 _grapplePoint;
+    private float _facingDir = 1f;
+    private LineRenderer _grappleLine;
+    private float _grappleReleaseTimer;
 
     private void Awake()
     {
@@ -109,12 +131,11 @@ public class PlayerPlatforming : MonoBehaviour
     {
         ResolveActions();
 
-        // PlayerInput manages its own action enable state.
         if (playerInput == null && _moveAction != null && _jumpAction != null)
         {
             _moveAction.Enable();
             _jumpAction.Enable();
-           
+            if (_grappleAction != null) _grappleAction.Enable();
             _ownsEnabledActions = true;
         }
     }
@@ -125,7 +146,7 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _moveAction.Disable();
             _jumpAction.Disable();
-            
+            if (_grappleAction != null) _grappleAction.Disable();
             _ownsEnabledActions = false;
         }
     }
@@ -133,9 +154,8 @@ public class PlayerPlatforming : MonoBehaviour
     private void Update()
     {
         _moveInput = _moveAction != null ? _moveAction.ReadValue<Vector2>().x : 0f;
-        
-        // Track whether the jump button is currently being held down
         _isJumpHeld = _jumpAction != null && _jumpAction.IsPressed();
+        _isGrappleHeld = _grappleAction != null && _grappleAction.IsPressed(); 
         
         if (_jumpAction != null && _jumpAction.WasPressedThisFrame())
         {
@@ -152,72 +172,238 @@ public class PlayerPlatforming : MonoBehaviour
     private void FixedUpdate()
     {
         float dt = Time.fixedDeltaTime;
-        if (IsGrounded())
+
+        HandleGrapple(dt);
+        
+        if (IsTouchingHazard())
         {
-            _coyoteTimer = coyoteTime;
-            if (_velocity.y < 0f)
+            // checkpoint logic here, to be added
+        }
+
+        // Suspend standard physics if we are pulling OR if we are doing the miss animation
+        if (!_isGrappling && !_isGrappleMissed)
+        {
+            if (IsGrounded())
             {
-                _velocity.y = 0f;
-                _isJumping = false; // reset jumping state when grounded
+                _coyoteTimer = coyoteTime;
+                _canGrapple = true; // RESET GRAPPLE CHARGE
+                
+                if (_velocity.y < 0f)
+                {
+                    _velocity.y = 0f;
+                    _isJumping = false; // reset jumping state when grounded
+                }
             }
+
+            // initializing the jump
+            if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
+            {
+                _velocity.y = jumpSpeed;
+                _jumpBufferTimer = 0f;
+                _coyoteTimer = 0f;
+                _isJumping = true; 
+            }
+
+            // --- VARIABLE JUMP HEIGHT ---
+            if (_isJumping && !_isJumpHeld && _velocity.y > 0f)
+            {
+                _velocity.y *= jumpCutMultiplier;
+                _isJumping = false;
+            }
+
+            if (_velocity.y <= 0f)
+            {
+                _isJumping = false;
+            }
+
+            // --- HORIZONTAL MOVEMENT ---
+            float targetVelocityX = _moveInput * moveSpeed;
+            float accelRate;
+
+            if (Mathf.Abs(_moveInput) < 0.01f)
+            {
+                accelRate = deceleration;
+            }
+            else if (Mathf.Abs(_velocity.x) > 0.01f && Mathf.Sign(_moveInput) != Mathf.Sign(_velocity.x))
+            {
+                accelRate = turnSpeed;
+            }
+            else
+            {
+                accelRate = acceleration;
+            }
+
+            _velocity.x = Mathf.MoveTowards(_velocity.x, targetVelocityX, accelRate * dt);
+
+            // --- GRAVITY ---
+            _velocity.y = Mathf.Max(_velocity.y - (gravity * dt), -maxFallSpeed);
         }
 
-        IsTouchingHazard();
-
-        // initializing the jump
-        if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
-        {
-            _velocity.y = jumpSpeed;
-            _jumpBufferTimer = 0f;
-            _coyoteTimer = 0f;
-            _isJumping = true; // we are now actively in a jump arc
-        }
-
-        // --- VARIABLE JUMP HEIGHT ---
-        // If we are jumping up, but the player let go of the jump button early...
-        if (_isJumping && !_isJumpHeld && _velocity.y > 0f)
-        {
-            // Cut the upward velocity 
-            _velocity.y *= jumpCutMultiplier;
-            
-            // Set to false so we only cut the velocity once per jump
-            _isJumping = false; 
-        }
-
-        // If the player begins falling naturally, they are no longer in an upward jump arc
-        if (_velocity.y <= 0f)
-        {
-            _isJumping = false;
-        }
-
-        // --- HORIZONTAL MOVEMENT ---
-        float targetVelocityX = _moveInput * moveSpeed;
-        float accelRate;
-
-        if (Mathf.Abs(_moveInput) < 0.01f)
-        {
-            accelRate = deceleration;
-        } 
-        else if (Mathf.Abs(_velocity.x) > 0.01f && Mathf.Sign(_moveInput) != Mathf.Sign(_velocity.x))
-        {
-            accelRate = turnSpeed;
-        }
-        else
-        {
-            accelRate = acceleration;
-        }
-
-        _velocity.x = Mathf.MoveTowards(_velocity.x, targetVelocityX, accelRate * dt);
-        
-        // --- GRAVITY ---
-        _velocity.y = Mathf.Max(_velocity.y - (gravity * dt), -maxFallSpeed);
-        
         Vector2 delta = _velocity * dt;
         MoveHorizontal(ref delta.x);
         MoveVertical(ref delta.y);
 
         _rb.MovePosition(_rb.position + delta);
     }
+
+    private void HandleGrapple(float dt)
+    {
+        // keep track of facing direction
+        if (Mathf.Abs(_moveInput) > 0.01f)
+        {
+            _facingDir = Mathf.Sign(_moveInput);
+        }
+        
+        if (_grappleLine == null)
+        {
+            GameObject lrObj = new GameObject("GrappleLine");
+            lrObj.transform.SetParent(transform);
+            _grappleLine = lrObj.AddComponent<LineRenderer>();
+            _grappleLine.startWidth = 0.15f;
+            _grappleLine.endWidth = 0.15f;
+            _grappleLine.material = new Material(Shader.Find("Sprites/Default"));
+            _grappleLine.startColor = Color.red;
+            _grappleLine.endColor = Color.red;
+            _grappleLine.positionCount = 2;
+            _grappleLine.sortingOrder = 10;
+            _grappleLine.useWorldSpace = true;
+            _grappleLine.enabled = false;
+        }
+
+        Vector2 origin = _collider.bounds.center; // shoot from player
+        bool grapplePressedThisFrame = _isGrappleHeld && !_wasGrappleHeld;
+        
+        // 1. INIT SHOT LOGIC
+        if (grapplePressedThisFrame && _canGrapple && !_isGrappling && !_isGrappleMissed)
+        {
+            _canGrapple = false; // Consume the charge
+            
+            Vector2 castDir = new Vector2(_facingDir, 0f);
+            int hits = Physics2D.Raycast(origin, castDir, _collisionFilter, _castHits, grappleMaxDistance);
+            bool hitWall = false;
+
+            for (int i = 0; i < hits; i++) 
+            {
+                if (_castHits[i].collider.attachedRigidbody == _rb) continue;
+
+                if (Mathf.Abs(_castHits[i].normal.x) > WallNormalThreshold) 
+                {
+                    _grapplePoint = _castHits[i].point;
+                    _isGrappling = true;
+                    hitWall = true;
+                    break;
+                }
+            }
+
+            // Trigger Miss state if we didn't find a wall
+            if (!hitWall)
+            {
+                _isGrappleMissed = true;
+                _isGrappleRetracting = false;
+                _grappleMissDistance = 0f;
+            }
+        }
+        
+        // 2. STATE BEHAVIORS
+        if (_isGrappling)
+        {
+            if (!_isGrappleHeld || _jumpBufferTimer > 0f) // cancel grapple
+            {
+                _isGrappling = false;
+                _grappleLine.enabled = false;
+                
+                _coyoteTimer = coyoteTime;
+                _grappleReleaseTimer = 0.15f; 
+            }
+            else 
+            {
+                float pullDir = Mathf.Sign(_grapplePoint.x - _rb.position.x);
+                float dist = Mathf.Abs(_grapplePoint.x - _rb.position.x);
+                
+                if (dist > skinWidth * 3f) 
+                {
+                    _velocity.x = pullDir * grapplePullSpeed;
+                    _velocity.y = 0f;
+                }
+                else 
+                {
+                    _velocity.x = 0f;
+                    _velocity.y = 0f;
+                }
+
+                _grappleLine.enabled = true;
+                _grappleLine.SetPosition(0, new Vector3(origin.x, origin.y, 0f));
+                _grappleLine.SetPosition(1, new Vector3(_grapplePoint.x, _grapplePoint.y, 0f));
+            }
+        }
+        else if (_isGrappleMissed)
+        {
+            // LOCK velocity mid-air so player stops perfectly
+            _velocity = Vector2.zero; 
+            
+            // Double speed so the miss feels snappy like Celeste
+            float missAnimSpeed = grapplePullSpeed * 2f; 
+
+            if (!_isGrappleRetracting)
+            {
+                // Extending outwards
+                _grappleMissDistance += missAnimSpeed * dt;
+                if (_grappleMissDistance >= grappleMaxDistance)
+                {
+                    _grappleMissDistance = grappleMaxDistance;
+                    _isGrappleRetracting = true;
+                }
+            }
+            else
+            {
+                // Retracting inwards
+                _grappleMissDistance -= missAnimSpeed * dt;
+                if (_grappleMissDistance <= 0f)
+                {
+                    // Animation complete, Resume falling
+                    _isGrappleMissed = false;
+                    _grappleLine.enabled = false;
+                }
+            }
+
+            // Draw line dynamically while missing
+            if (_isGrappleMissed) 
+            {
+                _grappleLine.enabled = true;
+                Vector3 startPos = new Vector3(origin.x, origin.y, 0f);
+                Vector3 endPos = startPos + new Vector3(_facingDir * _grappleMissDistance, 0f, 0f);
+                
+                _grappleLine.SetPosition(0, startPos);
+                _grappleLine.SetPosition(1, endPos);
+            }
+        }
+        else // Not grappling and not missing
+        {
+            _grappleLine.enabled = false;
+            
+            if (_grappleReleaseTimer > 0f)
+            {
+                _grappleReleaseTimer -= dt;
+                
+                if (_isJumping)
+                {
+                    _velocity.y = jumpSpeed * grappleJumpBoost;
+                    _grappleReleaseTimer = 0f; // Consume boost
+                }
+            }
+        }
+        
+        _wasGrappleHeld = _isGrappleHeld;
+    } // what a long function am i right guys?
+    
+    
+    
+    // WARNING 
+    // ALL CODE BENEATH THIS IS FROM EARLY DEVELOPMENT
+    // I DONT REALLY KNOW WHAT MOST OF IT DOES (EXCEPT FOR THE HAZARD LOGIC)
+    // ALL I KNOW IS THAT IF I CHANGE ANY OF IT, IT BREAKS
+    // theres some predictive shit as well
+    // todo: refactor
 
     private void MoveHorizontal(ref float moveX)
     {
@@ -232,7 +418,6 @@ public class PlayerPlatforming : MonoBehaviour
 
         for (int i = 0; i < hitCount; i++)
         {
-            // Ignore floor/ceiling contacts when resolving horizontal movement.
             if (Mathf.Abs(_castHits[i].normal.x) < WallNormalThreshold)
             {
                 continue;
@@ -260,7 +445,6 @@ public class PlayerPlatforming : MonoBehaviour
 
         for (int i = 0; i < hitCount; i++)
         {
-            // Ignore near-vertical-wall contacts when resolving vertical movement.
             if (Mathf.Abs(_castHits[i].normal.y) < FloorNormalThreshold)
             {
                 continue;
@@ -301,45 +485,41 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _moveAction = playerInput.actions.FindAction(moveActionName);
             _jumpAction = playerInput.actions.FindAction(jumpActionName);
-            
+            _grappleAction = playerInput.actions.FindAction(grappleActionName);
         }
 
-        if ((_moveAction == null || _jumpAction == null) && inputActions != null)
+        if ((_moveAction == null || _jumpAction == null || _grappleAction == null) && inputActions != null)
         {
             _moveAction ??= inputActions.FindAction(moveActionName);
             _jumpAction ??= inputActions.FindAction(jumpActionName);
-            
+            _grappleAction  ??= inputActions.FindAction(grappleActionName);
         }
 
-        if (_moveAction == null || _jumpAction == null)
+        if (_moveAction == null || _jumpAction == null || _grappleAction == null)
         {
             _moveAction ??= InputSystem.actions?.FindAction(moveActionName);
             _jumpAction ??= InputSystem.actions?.FindAction(jumpActionName);
-            
+            _grappleAction  ??= InputSystem.actions?.FindAction(grappleActionName);
         }
 
-        if (_moveAction == null || _jumpAction == null)
+        if (_moveAction == null || _jumpAction == null || _grappleAction == null)
         {
-            Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
+            Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump/Grapple actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
         }
     }
 
     private bool IsTouchingHazard()
     {
-        // check every direction
         Vector2[] directions = { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
 
         foreach (Vector2 direction in directions)
         {
-            // raycasting logic
             int hitCount = _rb.Cast(direction, _collisionFilter, _castHits, groundProbeDistance);
 
             for (int i = 0; i < hitCount; i++)
             {
-                // does something have the hazard tag?
                 if (_castHits[i].collider.CompareTag("Hazard"))
                 {
-                    Debug.Log("IsTouchingHazard: true");
                     return true;
                 }
             }
