@@ -8,14 +8,16 @@ menu
 
 platforming
 - grapple mechanic (DONE)
-- checkpoints
+- checkpoints (DONE)
 - ingredients
 - climbing? (NOT GETTING ADDED)
 - parallax background
+- one way objects
+- regain grapple objects
 - just more levels tbh
 
 cutscenes
-- cooking tutorial
+- cooking tutorial?
 - opening cutscene
 - ending cutscenes
  - good ending
