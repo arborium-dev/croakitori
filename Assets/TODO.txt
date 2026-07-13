@@ -11,6 +11,7 @@ platforming
 - checkpoints (DONE)
 - ingredients
 - climbing? (NOT GETTING ADDED)
+- fix spike hitboxes
 - parallax background
 - one way objects
 - regain grapple objects
@@ -26,6 +27,6 @@ cutscenes
  - timer ending (bad ending but with a timer)
  
 misc
-- text tutorials
+- text tutorials (DONE)
 - find music for everything
 - player animations
