@@ -7,11 +7,12 @@ menu
  - fullscreen
 
 platforming
-- grapple mechanic
+- grapple mechanic (DONE)
 - checkpoints
 - ingredients
-- climbing?
+- climbing? (NOT GETTING ADDED)
 - parallax background
+- just more levels tbh
 
 cutscenes
 - cooking tutorial
