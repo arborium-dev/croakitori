@@ -1,3 +1,6 @@
+// CheckpointManager.cs
+// manages how the checkpoints store location data
+
 using UnityEngine;
 
 public class CheckpointManager : MonoBehaviour

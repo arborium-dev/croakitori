@@ -5,13 +5,13 @@ menu
 - settings?
  - audio
  - fullscreen
-
+ 
 platforming
 - grapple mechanic (DONE)
 - checkpoints (DONE)
 - ingredients
 - climbing? (NOT GETTING ADDED)
-- fix spike hitboxes
+- fix spike hitboxes (DONE)
 - parallax background
 - one way objects
 - regain grapple objects
@@ -30,3 +30,4 @@ misc
 - text tutorials (DONE)
 - find music for everything
 - player animations
+ 

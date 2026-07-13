@@ -1,3 +1,6 @@
+// TextController.cs
+// controls the animated tutorial text in the Platforming scene
+
 using System.Collections;
 using UnityEngine;
 using TMPro;
