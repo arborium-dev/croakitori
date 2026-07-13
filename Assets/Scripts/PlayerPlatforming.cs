@@ -40,7 +40,7 @@ public class PlayerPlatforming : MonoBehaviour
 
     [SerializeField]
     private float jumpBufferTime = 0.1f;
-
+    
     [Tooltip("Multiplier applied to upward velocity when the jump button is released early. Lower = shorter hops.")]
     [SerializeField, Range(0f, 1f)]
     private float jumpCutMultiplier = 0.5f;
@@ -48,7 +48,7 @@ public class PlayerPlatforming : MonoBehaviour
     [Header("Collision")]
     [SerializeField]
     private LayerMask groundLayer;
-
+    
     [SerializeField]
     private float skinWidth = 0.02f;
 
