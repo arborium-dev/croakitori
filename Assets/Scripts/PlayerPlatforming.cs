@@ -162,6 +162,8 @@ public class PlayerPlatforming : MonoBehaviour
             }
         }
 
+        IsTouchingHazard();
+
         // initializing the jump
         if (_jumpBufferTimer > 0f && _coyoteTimer > 0f)
         {
@@ -175,7 +177,7 @@ public class PlayerPlatforming : MonoBehaviour
         // If we are jumping up, but the player let go of the jump button early...
         if (_isJumping && !_isJumpHeld && _velocity.y > 0f)
         {
-            // Cut the upward velocity
+            // Cut the upward velocity 
             _velocity.y *= jumpCutMultiplier;
             
             // Set to false so we only cut the velocity once per jump
@@ -320,5 +322,28 @@ public class PlayerPlatforming : MonoBehaviour
         {
             Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
         }
+    }
+
+    private bool IsTouchingHazard()
+    {
+        // check every direction
+        Vector2[] directions = { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
+
+        foreach (Vector2 direction in directions)
+        {
+            // raycasting logic
+            int hitCount = _rb.Cast(direction, _collisionFilter, _castHits, groundProbeDistance);
+
+            for (int i = 0; i < hitCount; i++)
+            {
+                // does something have the hazard tag?
+                if (_castHits[i].collider.CompareTag("Hazard"))
+                {
+                    Debug.Log("IsTouchingHazard: true");
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

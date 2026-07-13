@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Pan
+  - Hazard
   layers:
   - Default
   - TransparentFX
