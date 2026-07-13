@@ -565,5 +565,8 @@ public class PlayerPlatforming : MonoBehaviour
         {
             _rb.linearVelocity = Vector2.zero;
         }
+        
+        // reset grapple states
+        _isGrappling = false;
     }
 }
