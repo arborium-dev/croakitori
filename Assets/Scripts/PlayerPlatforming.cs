@@ -1,6 +1,8 @@
 // PlayerPlatforming.cs
 // This script controls how the player physics and collisions function
+// this also includes thr grapple physics, sadly
 
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -123,6 +125,12 @@ public class PlayerPlatforming : MonoBehaviour
             layerMask = groundLayer,
             useTriggers = false
         };
+        
+        // Set the initial checkpoint to where the player starts the level
+        if (CheckpointManager.Instance != null)
+        {
+            CheckpointManager.Instance.SetCheckpoint(transform.position);
+        }
 
         ResolveActions();
     }
@@ -175,10 +183,18 @@ public class PlayerPlatforming : MonoBehaviour
 
         HandleGrapple(dt);
         
-        if (IsTouchingHazard())
+        if (IsTouchingObject("Hazard"))
         {
-            // checkpoint logic here, to be added
+            Respawn();
         }
+
+        // if (IsTouchingObject("Checkpoint"))
+        // {
+        //     Debug.Log("Checkpoint");
+        //     Debug.Log($"Checkpoint transform: {transform.position}");
+        //     CheckpointManager.Instance.SetCheckpoint(transform.position);
+        // }
+        // handled in OnTriggerEnter, dont need predictive logic for checkpoints
 
         // Suspend standard physics if we are pulling OR if we are doing the miss animation
         if (!_isGrappling && !_isGrappleMissed)
@@ -507,8 +523,9 @@ public class PlayerPlatforming : MonoBehaviour
             Debug.LogWarning("PlayerPlatforming: Could not find Move/Jump/Grapple actions. Assign PlayerInput or InputActionAsset in the inspector.", this);
         }
     }
+    
 
-    private bool IsTouchingHazard()
+    private bool IsTouchingObject(string tagName) // only works for colliable objects
     {
         Vector2[] directions = { Vector2.down, Vector2.up, Vector2.left, Vector2.right };
 
@@ -518,12 +535,35 @@ public class PlayerPlatforming : MonoBehaviour
 
             for (int i = 0; i < hitCount; i++)
             {
-                if (_castHits[i].collider.CompareTag("Hazard"))
+                if (_castHits[i].collider.CompareTag(tagName))
                 {
                     return true;
                 }
             }
         }
         return false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Checkpoint"))
+        {
+            Debug.Log("Checkpoint");
+            Debug.Log($"Checkpoint transform: {collision.transform.position}");
+            CheckpointManager.Instance.SetCheckpoint(transform.position);
+        }    
+        
+    }
+
+    private void Respawn()
+    {
+        // telelpot
+        transform.position = CheckpointManager.Instance.currentCheckpoint;
+        
+        // reset momentum
+        if (_rb != null)
+        {
+            _rb.linearVelocity = Vector2.zero;
+        }
     }
 }

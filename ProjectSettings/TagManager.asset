@@ -7,6 +7,7 @@ TagManager:
   - Ground
   - Pan
   - Hazard
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
