@@ -6857,7 +6857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22.54, y: 3.95}
+  m_AnchoredPosition: {x: 21.57, y: 5.01}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211221179
@@ -6880,7 +6880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X + C to grapple jump
+  m_text: C while holding X to grapple jump
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f7593b7e5e818324b836324fa0151bce, type: 2}
   m_sharedMaterial: {fileID: -7069737133437811942, guid: f7593b7e5e818324b836324fa0151bce, type: 2}
@@ -6946,7 +6946,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 12.829603, w: 0}
+  m_margin: {x: -3.5111198, y: 0, z: 12.829603, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
