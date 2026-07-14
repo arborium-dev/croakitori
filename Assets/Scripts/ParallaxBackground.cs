@@ -1,3 +1,9 @@
+// ParallaxBackground.cd
+// not used i think?
+// part of ParallaxGenerator.cs, and discontinued for the same reason
+// not deleting it because I think it might be important
+// todo: delete
+
 using UnityEngine;
 
 public class ParallaxBackground : MonoBehaviour

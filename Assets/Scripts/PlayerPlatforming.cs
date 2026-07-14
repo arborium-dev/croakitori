@@ -607,7 +607,7 @@ public class PlayerPlatforming : MonoBehaviour
     
         // reset grapple states
         _isGrappling = false;
-
+ 
         // Wait a tiny fraction of a second in the black screen before fading back
         yield return new WaitForSeconds(0.1f);
 

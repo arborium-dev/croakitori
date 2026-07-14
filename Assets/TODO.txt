@@ -17,7 +17,7 @@ platforming
 - regain grapple objects (scrapped)
 - just more levels tbh (DONE)
 - jerimiah at the end of the level, and thats the scene transition
-- death fade out
+- death fade out (DONE)
 - sound effects
 - player animations
 
@@ -32,3 +32,6 @@ cutscenes
 misc
 - text tutorials (DONE)
 - find music for everything
+
+bugs
+- death fade out has a bug where the screen stays black forever if you hit many hazards

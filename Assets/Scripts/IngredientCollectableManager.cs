@@ -1,3 +1,7 @@
+// IngredientCollectableManager.cs
+// this manages the collectable spices around the level (how they follow, and the text effect after)
+// in the code they're called ingredients because im indecisive
+
 using UnityEngine;
 using TMPro;
 
