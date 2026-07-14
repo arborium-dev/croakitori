@@ -1,0 +1,54 @@
+using UnityEngine;
+
+public class ParallaxGenerator : MonoBehaviour
+{
+    [Header("Drag your Main Camera here")]
+    public Camera mainCamera;
+
+    [Header("Drag your BG Sprites here (BG1 first, BG8 last)")]
+    public Sprite[] backgroundSprites;
+
+    [Header("Size & Position Settings")]
+    [Tooltip("Force the background to be larger. Try 2, 3, or 4.")]
+    public float backgroundScale = 3f; 
+    
+    [Tooltip("Nudge the background up or down to align with your floor.")]
+    public float yOffset = 0f;
+
+    [Header("Sorting")]
+    public int startingSortingOrder = -20; 
+
+    void Start()
+    {
+        if (mainCamera == null) mainCamera = Camera.main;
+
+        // 1. Create a Master Pivot that will hold all the sprites
+        GameObject bgPivot = new GameObject("Generated_Static_Background");
+        
+        // 2. GLUE IT TO THE CAMERA. 
+        // By making it a child of the Main Camera, it will perfectly follow it forever with zero code.
+        bgPivot.transform.SetParent(mainCamera.transform);
+        
+        // 3. Center it on the camera. 
+        // We set Z to 10 so it gets pushed out in front of the camera's lens (otherwise it's invisible!)
+        bgPivot.transform.localPosition = new Vector3(0, yOffset, 10f);
+
+        // 4. Spawn exactly ONE of each sprite and stack them
+        for (int i = 0; i < backgroundSprites.Length; i++)
+        {
+            GameObject bgLayer = new GameObject("BG_Layer_" + (i + 1));
+            bgLayer.transform.SetParent(bgPivot.transform);
+            
+            // Keep it perfectly centered on the Master Pivot
+            bgLayer.transform.localPosition = Vector3.zero;
+            
+            // Apply your size scale
+            bgLayer.transform.localScale = new Vector3(backgroundScale, backgroundScale, 1f);
+
+            // Add the sprite and set the layer order so they stack correctly (BG1 in back, BG8 in front)
+            SpriteRenderer sr = bgLayer.AddComponent<SpriteRenderer>();
+            sr.sprite = backgroundSprites[i];
+            sr.sortingOrder = startingSortingOrder + i;
+        }
+    }
+}

@@ -12,7 +12,7 @@ platforming
 - ingredients
 - climbing? (NOT GETTING ADDED)
 - fix spike hitboxes (DONE)
-- parallax background
+- parallax background (NOT PARALLAX BUT DONE)
 - one way objects
 - regain grapple objects
 - just more levels tbh

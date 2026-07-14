@@ -32,12 +32,10 @@ Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Daz
 - Use your toungue to reach higher platforms and grab ingredients.
 - Use items around the level to increase your stamina and replenish your toungue.
 ### Inspiration:
-Dave the Diver was the main inspiration for combining genres and cooking with minigames.
-Celeste and Pikuniku were the inspirations for the platforming and the vibe of the game.
-Unbeatable was the inspiration for the cooking minigame and the music.
-Pikuniku and Celeste were the inspirations for the music and art, respecfivly.
+Unbeatable and Dave the Diver inspired the Cooking section, specifically Unbeatable's bartending minigame (this was also the main inspiration for the music!)
 
-### Credits:
+Celeste (and celeste classic 2) inspired the platforming section.
+### Credits: 
 - Will Kuntze for programming, art, writing, cutscenes, and platforming game design
 - Leland Baker for UI programming, music, story, and cooking game design
 - Random images on Google for cooking art
