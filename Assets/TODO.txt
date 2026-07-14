@@ -5,7 +5,7 @@ menu
 - settings?
  - audio
  - fullscreen
- 
+
 platforming
 - grapple mechanic (DONE)
 - checkpoints (DONE)
@@ -16,6 +16,10 @@ platforming
 - one way objects (scrapped)
 - regain grapple objects (scrapped)
 - just more levels tbh (DONE)
+- jerimiah at the end of the level, and thats the scene transition
+- death fade out
+- sound effects
+- player animations
 
 cutscenes
 - cooking tutorial?
@@ -23,10 +27,8 @@ cutscenes
 - ending cutscenes
  - good ending
  - good ending +
- - bad ending
- - timer ending (bad ending but with a timer)
- 
+ - redo request (if timer expired)
+
 misc
 - text tutorials (DONE)
 - find music for everything
-- player animations

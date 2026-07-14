@@ -5,6 +5,8 @@
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using UnityEngine.UI;
 
 public class PlayerPlatforming : MonoBehaviour
 {
@@ -79,6 +81,14 @@ public class PlayerPlatforming : MonoBehaviour
 
     // Multiplies normal jump speed if you jump out of a grapple, might remove this tbh because its kind of level design breaking
     [SerializeField] private float grappleJumpBoost = 1.25f;
+    
+    [Header("Respawn UI")]
+    [SerializeField] private Image fadeImage;
+    [Tooltip("How fast the screen fades. Higher is faster.")]
+    [SerializeField] private float fadeSpeed = 5f; 
+    
+    // This prevents the player from triggering multiple respawns at the same time
+    private bool _isRespawning = false;
     
     private InputAction _moveAction;
     private InputAction _jumpAction;
@@ -560,10 +570,33 @@ public class PlayerPlatforming : MonoBehaviour
 
     private void Respawn()
     {
-        // Invoke the death event so other objects (like ingredients) can react
+        // Prevent starting the sequence multiple times if touching multiple hazards
+        if (_isRespawning) return;
+        
+        StartCoroutine(RespawnSequence());
+    }
+
+    private IEnumerator RespawnSequence()
+    {
+        _isRespawning = true;
+
+        // 1. FADE TO BLACK
+        if (fadeImage != null)
+        {
+            float alpha = 0f;
+            while (alpha < 1f)
+            {
+                alpha += Time.deltaTime * fadeSpeed;
+                // Keep the color black, just change the alpha
+                fadeImage.color = new Color(0f, 0f, 0f, alpha);
+                yield return null; // Wait until next frame
+            }
+        }
+
+        // 2. DO THE ACTUAL RESPAWN LOGIC (While the screen is fully black)
         OnPlayerDeath?.Invoke();
     
-        // telelpot
+        // teleport
         transform.position = CheckpointManager.Instance.currentCheckpoint;
     
         // reset momentum
@@ -574,5 +607,22 @@ public class PlayerPlatforming : MonoBehaviour
     
         // reset grapple states
         _isGrappling = false;
+
+        // Wait a tiny fraction of a second in the black screen before fading back
+        yield return new WaitForSeconds(0.1f);
+
+        // 3. FADE BACK TO CLEAR
+        if (fadeImage != null)
+        {
+            float alpha = 1f;
+            while (alpha > 0f)
+            {
+                alpha -= Time.deltaTime * fadeSpeed;
+                fadeImage.color = new Color(0f, 0f, 0f, alpha);
+                yield return null; // Wait until next frame
+            }
+        }
+
+        _isRespawning = false;
     }
 }
