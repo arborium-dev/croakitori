@@ -111,6 +111,9 @@ public class PlayerPlatforming : MonoBehaviour
     private float _facingDir = 1f;
     private LineRenderer _grappleLine;
     private float _grappleReleaseTimer;
+    
+    public delegate void PlayerDeathDelegate();
+    public event PlayerDeathDelegate OnPlayerDeath;
 
     private void Awake()
     {
@@ -475,7 +478,7 @@ public class PlayerPlatforming : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded() // the ingredients also use this!
     {
         int hitCount = _rb.Cast(Vector2.down, _collisionFilter, _castHits, groundProbeDistance);
         for (int i = 0; i < hitCount; i++)
@@ -557,15 +560,18 @@ public class PlayerPlatforming : MonoBehaviour
 
     private void Respawn()
     {
+        // Invoke the death event so other objects (like ingredients) can react
+        OnPlayerDeath?.Invoke();
+    
         // telelpot
         transform.position = CheckpointManager.Instance.currentCheckpoint;
-        
+    
         // reset momentum
         if (_rb != null)
         {
             _rb.linearVelocity = Vector2.zero;
         }
-        
+    
         // reset grapple states
         _isGrappling = false;
     }

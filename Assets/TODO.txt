@@ -9,13 +9,13 @@ menu
 platforming
 - grapple mechanic (DONE)
 - checkpoints (DONE)
-- ingredients
-- climbing? (NOT GETTING ADDED)
+- ingredients (DONE)
+- climbing? (scrapped)
 - fix spike hitboxes (DONE)
 - parallax background (NOT PARALLAX BUT DONE)
-- one way objects
-- regain grapple objects
-- just more levels tbh
+- one way objects (scrapped)
+- regain grapple objects (scrapped)
+- just more levels tbh (DONE)
 
 cutscenes
 - cooking tutorial?
@@ -30,4 +30,3 @@ misc
 - text tutorials (DONE)
 - find music for everything
 - player animations
- 

@@ -8,6 +8,7 @@ TagManager:
   - Pan
   - Hazard
   - Checkpoint
+  - Ingredient
   layers:
   - Default
   - TransparentFX
