@@ -99,7 +99,7 @@ public class PlayerPlatforming : MonoBehaviour
     
     // these must match the shits in unity
     private const string ANIM_IDLE = "idle";
-    private const string ANIM_MOVE = "movingRight";
+    private const string ANIM_MOVE = "walkingRight";
     private const string ANIM_JUMP = "jumpingRight";
     
     private InputAction _moveAction;
@@ -328,7 +328,7 @@ public class PlayerPlatforming : MonoBehaviour
         {
             ChangeAnimationState(ANIM_JUMP);
         }
-        else if (Mathf.Abs(_velocity.x) > 0.01f)
+        else if (Mathf.Abs(_moveInput) > 0.01f)
         {
             ChangeAnimationState(ANIM_MOVE);
         }
