@@ -20,6 +20,7 @@ platforming
 - death fade out (DONE)
 - sound effects
 - player animations
+    - draw them (DONE)
 
 cutscenes
 - cooking tutorial?
@@ -34,4 +35,4 @@ misc
 - find music for everything
 
 bugs
-- death fade out has a bug where the screen stays black forever if you hit many hazards
+- death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)

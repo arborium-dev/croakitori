@@ -90,6 +90,18 @@ public class PlayerPlatforming : MonoBehaviour
     // This prevents the player from triggering multiple respawns at the same time
     private bool _isRespawning = false;
     
+    // ANIMATION CODE YIPPEE
+
+    [Header("Animation")] 
+    private Animator _animator;
+    private SpriteRenderer _spriteRenderer;
+    private string _currentAnimState;
+    
+    // these must match the shits in unity
+    private const string ANIM_IDLE = "idle";
+    private const string ANIM_MOVE = "movingRight";
+    private const string ANIM_JUMP = "jumpingRight";
+    
     private InputAction _moveAction;
     private InputAction _jumpAction;
     private InputAction _grappleAction;
@@ -132,12 +144,16 @@ public class PlayerPlatforming : MonoBehaviour
         _rb.gravityScale = 0f;
         _rb.freezeRotation = true;
 
+        _animator = GetComponent<Animator>();
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        
         _collisionFilter = new ContactFilter2D
         {
             useLayerMask = true,
             layerMask = groundLayer,
             useTriggers = false
         };
+        
         
         // Set the initial checkpoint to where the player starts the level
         if (CheckpointManager.Instance != null)
@@ -273,6 +289,53 @@ public class PlayerPlatforming : MonoBehaviour
         MoveVertical(ref delta.y);
 
         _rb.MovePosition(_rb.position + delta);
+        
+        // anims!
+
+        UpdateAnimation();
+
+    }
+
+    private void ChangeAnimationState(string newState)
+    {
+        if (_animator == null) return;
+        
+        // stop animator interupting itself
+        if (_currentAnimState == newState) return;
+        
+        _animator.Play(newState);
+        
+        // update current state
+        _currentAnimState = newState;
+    }
+
+    private void UpdateAnimation()
+    {
+        if (_spriteRenderer == null) return;
+        
+        // handle flipping
+        if (_moveInput > 0.01f)
+        {
+            _spriteRenderer.flipX = false;
+        }
+        else if (_moveInput < -0.01f)
+        {
+            _spriteRenderer.flipX = true;
+        }
+        
+        // handle state changes
+        if (!IsGrounded())
+        {
+            ChangeAnimationState(ANIM_JUMP);
+        }
+        else if (Mathf.Abs(_velocity.x) > 0.01f)
+        {
+            ChangeAnimationState(ANIM_MOVE);
+        }
+        else
+        {
+            ChangeAnimationState(ANIM_IDLE);
+        }
     }
 
     private void HandleGrapple(float dt)
