@@ -33,6 +33,9 @@ cutscenes
 misc
 - text tutorials (DONE)
 - find music for everything
+- saving
+- pause menu
+- start screen changes on game completion
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
