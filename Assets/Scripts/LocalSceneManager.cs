@@ -27,6 +27,12 @@ public class LocalSceneManager : MonoBehaviour
     {
         TotalScore = totalScore;
         Debug.Log($"SceneManager received final total score: {TotalScore}");
+
+        if (TotalScore == -1)
+        {
+            SceneManager.LoadScene("CookingIntro");
+            return;
+        }
         // switch scene to Ending and give it TotalScore
         SceneManager.LoadScene("Ending");
     }

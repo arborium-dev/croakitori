@@ -1,10 +1,10 @@
 ﻿ok so basically
 
-menu
-- trailer video
-- settings?
- - audio
- - fullscreen
+menu (DONE)
+- menu video (done)
+- settings? (scrapped)
+ - audio (scrapped)
+ - fullscreen (scrapped)
 
 platforming
 - grapple mechanic (DONE)
@@ -16,14 +16,15 @@ platforming
 - one way objects (scrapped)
 - regain grapple objects (scrapped)
 - just more levels tbh (DONE)
-- jerimiah at the end of the level, and thats the scene transition
+- jerimiah at the end of the level, and thats the scene transition (done)
+    - music as you get closer to him
 - death fade out (DONE)
 - sound effects
 - player animations (DONE-ish)
     - draw them (DONE)
 
 cutscenes
-- cooking tutorial?
+- cooking tutorial
 - opening cutscene
 - ending cutscenes
  - good ending
@@ -36,6 +37,9 @@ misc
 - saving
 - pause menu
 - start screen changes on game completion
+- loop easter egg with worm from BEAT EM UP (DONE)
+- polish camera transitions
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
+- camera starts on room 3 then transitions to player
