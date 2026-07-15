@@ -28,8 +28,8 @@ cutscenes
 - opening cutscene
 - ending cutscenes
  - good ending
- - good ending +
- - redo request (if timer expired)
+ - good ending + (scrapped)
+ - redo request (if timer expired) (DONE, BUT INSTEAD YOU JUST RESTART COOKING)
 
 misc
 - text tutorials (DONE)
@@ -39,6 +39,8 @@ misc
 - start screen changes on game completion
 - loop easter egg with worm from BEAT EM UP (DONE)
 - polish camera transitions
+- add cutscenes to a google drive folder
+- gameplay video for the itch.io page
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)

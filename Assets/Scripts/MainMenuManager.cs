@@ -24,6 +24,11 @@ public class MainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void SkipToCooking()
+    {
+        SceneManager.LoadScene("CookingIntro");
+    }
+
     public void StartGame()
     {
         SceneManager.LoadScene("OpeningScene");
