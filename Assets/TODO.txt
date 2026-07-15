@@ -19,7 +19,7 @@ platforming
 - jerimiah at the end of the level, and thats the scene transition
 - death fade out (DONE)
 - sound effects
-- player animations
+- player animations (DONE-ish)
     - draw them (DONE)
 
 cutscenes
