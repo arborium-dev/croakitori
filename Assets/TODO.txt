@@ -25,7 +25,7 @@ platforming
 
 cutscenes
 - cooking tutorial (DONE)
-- opening cutscene 
+- opening cutscene (DONE)
 - ending cutscenes (DONE)
  - good ending (DONE)
  - good ending + (scrapped)
@@ -42,10 +42,12 @@ misc
 - skip cutscenes P (DONE, not for last cutscene)
 - change grapple to tougne on all tutorial text (DONE)
 - change background color on main menu for when the video is loading (DONE)
+- redo changing of menu cutscene 
 
 management
 - update readme
-- gameplay video for the itch.io page
+    - HAVE GAME SCREENSHOTS
+- gameplay video for the itch.io page (DONE)
 - add cutscenes to a google drive folder
 - setup itch.io page
 - setup readme on github repo

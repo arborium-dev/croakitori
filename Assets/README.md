@@ -3,11 +3,13 @@
 Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Dazhi’s dismay, Now Jeremiah (Taishi) must venture off to prove the beauty of chinese cuisine to his father and venture from his home in Guandu, to Wulai to make his father proud.
 
 ### COMPILING FROM SOURCE NOTES:
-The cutscene files are too big to store on github correctly, so you'll need to download the cutscene files from the following link and place them in the Assets/Resources/Cutscenes folder:
+The cutscene files are too big to store on github correctly, so you'll need to download the cutscene files from the following link and place them in the Assets/Resources/Cutscenes folder: https://drive.google.com/drive/folders/1VgGgR2snjRAvIvx0Vzam-_x_0KUYjsfM?usp=drive_link
 
 If you don't want to download the cutscene files, you can still compile the game, but the cutscenes will not be present in the game. You'll need to use P to skip the cutscenes, and the Main Menu will be weird.
 
-If you don't want to compile the game from source, a playable web build is available at the following link: 
+To compile the game, download the source code from this repository, and open it in Unity 6000.3.8f1. Then, click on File > Build Settings, select your platform, and click Build.
+
+***If you don't want to compile the game from source, a playable web build is available at the following link: https://arboriumdev.itch.io/croakitori*** 
 
 ### Cast:
 - Jeremiah Taishi Wang Jr. - The son of Dazhi who owns sketchy Chinese restaurant (yellow, fat)
@@ -17,6 +19,10 @@ If you don't want to compile the game from source, a playable web build is avail
 - Explore the underground world of food in Taiwan using your toungue.
 - Cook extravagant dishes to impress your father and gain respect in the culinary world.
 - Finally seek your fathers approval and prove that Chinese cuisine is worth celebrating.
+
+### Screenshots:
+
+(a gameplay video is also avalible at: https://youtu.be/sL2dV9rfkVY)
 
 ### Controls:
 #### Cooking Minigame:
@@ -40,9 +46,9 @@ If you don't want to compile the game from source, a playable web build is avail
 - Move around the level collecting spices and avoiding obstacles.
 - Use your toungue to reach higher platforms and grab ingredients.
 ### Inspiration:
-Unbeatable and Dave the Diver inspired the Cooking section, specifically Unbeatable's bartending minigame (this was also the main inspiration for the music!)
+UNBEATABLE and Dave the Diver inspired the Cooking section, specifically UNBEATABLE's bartending minigame (this was also the main inspiration for the music!)
 
-Celeste (and celeste classic 2) inspired the platforming section.
+Celeste (and Celeste Classic 2) inspired the platforming section.
 ### Credits: 
 - arborium did programming for main menu, platforming and cutscenes, and did the writing, the cutscenes, and art
 - Khan did programming for the cooking minigame, did the music, and came up with the story concepts
@@ -62,8 +68,13 @@ This game was developped in Unity 6000.3.8f1 over the course of 3 months (althou
 The story behind how it was actually created is a little more complex.
 (I refers to arborium here)
 
-We originally started this project about 1 week after horizons was announced, and began brainstorming instantly. The only problem was that Horizons had a 33% art limit, and Khan's computer can't run Unity (Godot is not the same, its a lot harder to use imo).
+We originally started this project about 1 week after horizons was announced, and began brainstorming instantly. We based the core gameplay loop off of Dave the Diver, where you alternate between cooking and swimming. The cooking we (basically) stole from UNBEATABLE because its one of our favorite games, and the platforming was based off of Celeste (and Celeste Classic 2). Khan created the story entirely off of the idea he wanted Joy to the World to be the last song. With all this decided, it was time to get to work.
+
+The only problem was that Horizons had a 33% art limit, and Khan's computer can't run Unity (Godot is not the same, its a lot harder to use imo).
 So, every week we met up and I gave him my laptop to work on the game, while I used a desktop computer. Eventually, Khan got to his required 35h hours, and I began development (taking back my laptop).
+
+fun little side story here, khan forgot to upload the platforming music so I had to find a replacement, which ended up being the music from Pikuniku. the music will be replaced with original music in the future.
+
 At this point its worth mentioning that theres **2 more weeks before the game is due, and I have to get 33h** (look I was busy with exams and projects and stuff). This wouldn't be a problem if I was at home and I could work on it for 8 hours a day and be done quick. 
 Somehow, I was scheduled to be at a cottage, which ended up having very strict WiFi usage limits, and with the power going out occasionally. It was at this cottage that I finished all the platforming, the cutscenes, the menu, everything else basically (i am writting this readme on a porch).
 
@@ -88,10 +99,18 @@ We also plan to recompile the cutscenes at higher resolutions and with less visu
 - GitHub
 - Jetbrains Rider
 
+### AI Disclosure:
+As stated above, AI was used for debugging, tutorials, and fixing some parts of TheBigUI, PlayerPlatforming, and a few other scripts. NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITTING. 
+
+(the readme was also made by a human if you couldn't alread tell)
+
 ### Very Tentative Roadmap for 2026:
+- Remove Pikuniku music and replace with original music
+- Recompile current cutscenes at higher resolutions and with less visual artefacts
 - Next Platforming Level: Cherry Blossom Festival
 - Next Cooking Minigame: Remake the cooking minigame with rhythm mechanics
-- Next Platforming Level: Night Market
+- New Platforming Mechanics: Stamina, Climbing, Wall Jumping, and more
+- Restructure gameplay loop to originally intended alternating cooking and platforming levels
 - TBD
 
 
