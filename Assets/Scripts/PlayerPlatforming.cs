@@ -642,7 +642,18 @@ public class PlayerPlatforming : MonoBehaviour
     private IEnumerator RespawnSequence()
     {
         _isRespawning = true;
-
+        
+        // disable movement
+        _moveAction?.Disable();
+        _jumpAction?.Disable();
+        _grappleAction?.Disable();
+        
+        // reset momentum
+        if (_rb != null)
+        {
+            _rb.linearVelocity = Vector2.zero;
+        }
+        
         // 1. FADE TO BLACK
         if (fadeImage != null)
         {
@@ -662,11 +673,7 @@ public class PlayerPlatforming : MonoBehaviour
         // teleport
         transform.position = CheckpointManager.Instance.currentCheckpoint;
     
-        // reset momentum
-        if (_rb != null)
-        {
-            _rb.linearVelocity = Vector2.zero;
-        }
+        
     
         // reset grapple states
         _isGrappling = false;
@@ -685,6 +692,12 @@ public class PlayerPlatforming : MonoBehaviour
                 yield return null; // Wait until next frame
             }
         }
+        
+        // return movement actions
+        
+        _moveAction?.Enable();
+        _jumpAction?.Enable();
+        _grappleAction?.Enable();
 
         _isRespawning = false;
     }

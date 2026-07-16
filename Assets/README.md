@@ -2,9 +2,16 @@
 ## this is a game where food is illegal, and you do crimes.
 Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Dazhi’s dismay, Now Jeremiah (Taishi) must venture off to prove the beauty of chinese cuisine to his father and venture from his home in Guandu, to Wulai to make his father proud.
 
+### COMPILING FROM SOURCE NOTES:
+The cutscene files are too big to store on github correctly, so you'll need to download the cutscene files from the following link and place them in the Assets/Resources/Cutscenes folder:
+
+If you don't want to download the cutscene files, you can still compile the game, but the cutscenes will not be present in the game. You'll need to use P to skip the cutscenes, and the Main Menu will be weird.
+
+If you don't want to compile the game from source, a playable web build is available at the following link: 
+
 ### Cast:
 - Jeremiah Taishi Wang Jr. - The son of Dazhi who owns sketchy Chinese restaurant (yellow, fat)
-- Jeremiah Dazhi Wang Sr. - Moved to Japan when Japan conquered Taiwan and now rejects his Chinese heritage (comically big eyebrows, massive)
+- Jeremiah Dazhi Wang Sr. - Rejected his Chinese heritage when Japan conquered Taiwan (comically big eyebrows, massive)
 
 ### Gameplay:
 - Explore the underground world of food in Taiwan using your toungue.
@@ -19,6 +26,8 @@ Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Daz
 - Arrow Keys (or WASD) to move
 - C to jump
 - X to extend your toungue (release to pull yourself to the point of contact)
+#### Misc:
+- P to skip cutscenes
 
 ### How to Play:
 #### Cooking Minigame:
@@ -28,22 +37,48 @@ Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Daz
 - Rinse and Repeat until you have completed the full meal.
 - Do all this before running out of time
 #### Platforming Minigame:
-- Move around the level collecting ingredients and avoiding obstacles.
+- Move around the level collecting spices and avoiding obstacles.
 - Use your toungue to reach higher platforms and grab ingredients.
-- Use items around the level to increase your stamina and replenish your toungue.
 ### Inspiration:
 Unbeatable and Dave the Diver inspired the Cooking section, specifically Unbeatable's bartending minigame (this was also the main inspiration for the music!)
 
 Celeste (and celeste classic 2) inspired the platforming section.
 ### Credits: 
-- Will Kuntze for programming, art, writing, cutscenes, and platforming game design
-- Leland Baker for UI programming, music, story, and cooking game design
+- arborium did programming for main menu, platforming and cutscenes, and did the writing, the cutscenes, and art
+- Khan did programming for the cooking minigame, did the music, and came up with the story concepts
 - Random images on Google for cooking art
 - Various asset packs for platforming art
 
+```text
+notes for hack club reviewers:
+if you want to see specifically arborium's part, look at the main menu, platforming, and cutscenes, as well as the player art.
+
+if you want to see specifically khan's part, look at the cooking minigame and the music during the cooking cutscenes and the cooking minigame itself.
+```
+
 ### Development:
-This game was developped in Unity 6000.3.8f1 over the course of 3 months (although mostly the last one) for Horizons Polaris. We plan to expand this game to include more levels, more cooking minigames, and more story content in the future.
+This game was developped in Unity 6000.3.8f1 over the course of 3 months (although mostly the last one) for Hack Club Horizons Polaris. 
+
+The story behind how it was actually created is a little more complex.
+(I refers to arborium here)
+
+We originally started this project about 1 week after horizons was announced, and began brainstorming instantly. The only problem was that Horizons had a 33% art limit, and Khan's computer can't run Unity (Godot is not the same, its a lot harder to use imo).
+So, every week we met up and I gave him my laptop to work on the game, while I used a desktop computer. Eventually, Khan got to his required 35h hours, and I began development (taking back my laptop).
+At this point its worth mentioning that theres **2 more weeks before the game is due, and I have to get 33h** (look I was busy with exams and projects and stuff). This wouldn't be a problem if I was at home and I could work on it for 8 hours a day and be done quick. 
+Somehow, I was scheduled to be at a cottage, which ended up having very strict WiFi usage limits, and with the power going out occasionally. It was at this cottage that I finished all the platforming, the cutscenes, the menu, everything else basically (i am writting this readme on a porch).
+
+That was how Croakitori was created.
+
+Croakitori uses code from previous projects I've worked on. The predictive platforming engine is based on one of my unfinished projects, all the UI takes from (B)eat Em Up in some way or another, and anything neither of us knew how do to we looked up or found tutorials.
+AI was used for debugging, and fixing some of the more intricate parts of TheBigUI and PlayerPlatforming.
+
+NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITTING.
+
+
+We plan to expand this game to include more levels, more cooking minigames, and more story content in the future.
 This version of Croakitori was originally planned to have 3 platforming levels, a cohesive story, and in game cutscenes. It was also planned that you would alternate cooking and platforming levels, and that you would get stamina after each cooking level depending on your performance. However, due to time constraints, we were unable to implement these features. We plan to add these features in the future.
+
+We also plan to recompile the cutscenes at higher resolutions and with less visual artefacts.
 
 ### Tools Used:
 - Unity 6000.3.8f1
@@ -59,5 +94,6 @@ This version of Croakitori was originally planned to have 3 platforming levels, 
 - Next Platforming Level: Night Market
 - TBD
 
-fun fact:
+
+### fun fact:
 the name croakitori is a combination of the words croak and yakitori, which is a type of Japanese skewered chicken.

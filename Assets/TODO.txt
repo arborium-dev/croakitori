@@ -16,8 +16,8 @@ platforming
 - one way objects (scrapped)
 - regain grapple objects (scrapped)
 - just more levels tbh (DONE)
-- jerimiah at the end of the level, and thats the scene transition (done)
-    - music as you get closer to him
+- jerimiah at the end of the level, and thats the scene transition (DONE)
+    - music as you get closer to him (scrapped)
 - death fade out (DONE)
 - sound effects
 - player animations (DONE-ish)
@@ -36,15 +36,23 @@ misc
 - find music for everything (DONE)
 - saving (scrapped)
 - pause menu
-- start screen changes on game completion
+- start screen changes on game completion (DONE)
 - loop easter egg with worm from BEAT EM UP (DONE)
 - polish camera transitions (DONE)
-- add cutscenes to a google drive folder
+- skip cutscenes P (DONE, not for last cutscene)
+- change grapple to tougne on all tutorial text (DONE)
+- change background color on main menu for when the video is loading (DONE)
+
+management
+- update readme
 - gameplay video for the itch.io page
-- skip cutscenes x+c+down
+- add cutscenes to a google drive folder
+- setup itch.io page
+- setup readme on github repo
+- submit
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
-- camera starts on room 3 then transitions to player
-- you can move when you touch a spike
-- fix checkpoing on R3 (coming from the right)
+- camera starts on room 3 then transitions to player (only happenes in editor) (DONE)
+- you can move when you touch a spike (DONE)
+- fix checkpoing on R3 (coming from the right) (DONE)
