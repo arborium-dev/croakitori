@@ -24,24 +24,27 @@ platforming
     - draw them (DONE)
 
 cutscenes
-- cooking tutorial
-- opening cutscene
-- ending cutscenes
- - good ending
+- cooking tutorial (DONE)
+- opening cutscene 
+- ending cutscenes (DONE)
+ - good ending (DONE)
  - good ending + (scrapped)
  - redo request (if timer expired) (DONE, BUT INSTEAD YOU JUST RESTART COOKING)
 
 misc
 - text tutorials (DONE)
-- find music for everything
-- saving
+- find music for everything (DONE)
+- saving (scrapped)
 - pause menu
 - start screen changes on game completion
 - loop easter egg with worm from BEAT EM UP (DONE)
-- polish camera transitions
+- polish camera transitions (DONE)
 - add cutscenes to a google drive folder
 - gameplay video for the itch.io page
+- skip cutscenes x+c+down
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
 - camera starts on room 3 then transitions to player
+- you can move when you touch a spike
+- fix checkpoing on R3 (coming from the right)

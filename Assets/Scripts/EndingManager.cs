@@ -62,10 +62,10 @@ public class EndingManager : MonoBehaviour
 
     private string GetCutsceneName(int score)
     {
-        if (score == -1) return "timerEnding";
-        if (score == 0) return "badEnding";
-        if (0 < score && score != 15) return "normalEnding";
-        if (score >= 15) return "goodEnding";
+        if (score == -1) return "THIS SHOULD RETURN AN ERROR";
+        if (score == 0) return "croakitori ending";
+        if (0 < score && score != 15) return "croakitori ending";
+        if (score >= 15) return "croakitori ending";
         
         return "errorEnding"; // this is to catch any score values that dont trigger any of the above endings, although that should be impossible
     }
