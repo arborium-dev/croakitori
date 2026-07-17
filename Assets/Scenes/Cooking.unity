@@ -528,8 +528,8 @@ MonoBehaviour:
   cuminButton: {fileID: 1181612795}
   cookButton: {fileID: 1580100357}
   resetButton: {fileID: 1465223590}
-  startingTimeSeconds: 30
-  comboBonusSeconds: 15
+  startingTimeSeconds: 45
+  comboBonusSeconds: 20
   flashThreshold: 15
   normalTimerColor: {r: 1, g: 1, b: 1, a: 1}
   flashTimerColor: {r: 1, g: 0, b: 0, a: 1}

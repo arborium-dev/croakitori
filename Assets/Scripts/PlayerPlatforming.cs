@@ -433,6 +433,9 @@ public class PlayerPlatforming : MonoBehaviour
             // LOCK velocity mid-air so player stops perfectly
             _velocity = Vector2.zero; 
             
+            // Disable Move action to prevent mid air rotating
+            _moveAction?.Disable();
+            
             // Double speed so the miss feels snappy like Celeste
             float missAnimSpeed = grapplePullSpeed * 2f; 
 
@@ -455,8 +458,12 @@ public class PlayerPlatforming : MonoBehaviour
                     // Animation complete, Resume falling
                     _isGrappleMissed = false;
                     _grappleLine.enabled = false;
+                    
+                    // Enable Move action
+                    _moveAction?.Enable();
                 }
             }
+            
 
             // Draw line dynamically while missing
             if (_isGrappleMissed) 

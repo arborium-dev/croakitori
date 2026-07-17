@@ -12,18 +12,16 @@ public class VideoToSceneTransition : MonoBehaviour
     private InputAction skipCutscene;
     private bool hasTransitioned = false;
 
+    [SerializeField] private InputActionAsset inputActions;
+
     void Start()
     {
         videoPlayer = GetComponent<VideoPlayer>();
         videoPlayer.isLooping = false;
         videoPlayer.loopPointReached += OnVideoEnd;
 
-        skipCutscene = InputSystem.actions.FindAction("Skip", throwIfNotFound: false);
-        if (skipCutscene == null)
-        {
-            Debug.LogWarning("Skip action not found in Input System.");
-        }
-    }
+        skipCutscene = inputActions != null ? inputActions.FindAction("Skip", false) : null;
+}
 
     void OnEnable()
     {

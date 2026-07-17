@@ -45,6 +45,8 @@ misc
 - change background color on main menu for when the video is loading (DONE)
 - redo changing of menu cutscene (DONE) (THIS WORKS FINE EVERYWHERE BUT THE UNITY EDITOR)
 - add the quit button back (DONE, UNTESTED)
+- more levels
+- some way of knowing you're out of grapples
 
 management
 - update readme (DONE)
@@ -63,3 +65,9 @@ bugs
 - you can move when you touch a spike (DONE)
 - fix checkpoint on R3 (coming from the right) (DONE)
 - top text on menu gets cut off on resolutions that aren't 16:9
+- when grappling, changing directions midair changes the direction of the grapple (DONE)
+- able to access sourdough early by grapple jumping from R2 (DONE)
+- change final room, add checkpoint (DONE-ish, still need to rework the room a bit)
+- more time on cooking (done)
+- physics "finicky"
+- skip cutscene button broke?

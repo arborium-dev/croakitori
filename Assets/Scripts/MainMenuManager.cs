@@ -29,6 +29,10 @@ public class MainMenuManager : MonoBehaviour
     
     public void QuitGame()
     {
+        if (gameComplete)
+        {
+            PlayerPrefs.SetInt("GameComplete", 0);
+        }
         Application.Quit();
     }
 
