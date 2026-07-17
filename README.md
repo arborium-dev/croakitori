@@ -3,7 +3,7 @@
 Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Dazhi’s dismay, Now Jeremiah (Taishi) must venture off to prove the beauty of chinese cuisine to his father and venture from his home in Guandu, to Wulai to make his father proud.
 
 ### COMPILING FROM SOURCE NOTES:
-The cutscene files are too big to store on github correctly, so you'll need to download the cutscene files from the following link and place them in the Assets/Resources/Cutscenes folder: https://drive.google.com/drive/folders/1VgGgR2snjRAvIvx0Vzam-_x_0KUYjsfM?usp=drive_link
+The cutscene files are too big to store on github correctly, so you'll need to download the cutscene files from the following link and place them in the Assets/Resources/Cutscenes folder: https://drive.google.com/drive/folders/1VgGgR2snjRAvIvx0Vzam-_x_0KUYjsfM?usp=drive_link (THESE FILES WILL BE PUT ON A MORE PERMANENT HOST WHEN I GET HOME, SEE DEVELOPMENT SECTION ON WHY I CAN'T RIGHT NOW)
 
 If you don't want to download the cutscene files, you can still compile the game, but the cutscenes will not be present in the game. You'll need to use P to skip the cutscenes, and the Main Menu will be weird.
 

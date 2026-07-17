@@ -53,7 +53,7 @@ management
 - gameplay video for the itch.io page (DONE)
 - add cutscenes to a google drive folder (DONE)
 - setup itch.io page (DONE, BUT ITCH WONT HOST THE FILES (FAT FUCKS))
-- setup readme on github repo
+- setup readme on github repo (DONE)
 - submit (as windows build)
 
 bugs
