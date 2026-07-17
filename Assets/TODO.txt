@@ -47,6 +47,7 @@ misc
 - add the quit button back (DONE, UNTESTED)
 - more levels
 - some way of knowing you're out of grapples
+- skip indicator if any key is pressed during cutscene
 
 management
 - update readme (DONE)
@@ -58,7 +59,7 @@ management
 - setup readme on github repo (DONE)
 - submit (as windows build)
 
-bugs
+bugs/feedback
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
     - this also hasn't happened recently so maybe it was fixed by accident
 - camera starts on room 3 then transitions to player (only happenes in editor) (DONE)
@@ -67,7 +68,10 @@ bugs
 - top text on menu gets cut off on resolutions that aren't 16:9
 - when grappling, changing directions midair changes the direction of the grapple (DONE)
 - able to access sourdough early by grapple jumping from R2 (DONE)
-- change final room, add checkpoint (DONE-ish, still need to rework the room a bit)
-- more time on cooking (done)
-- physics "finicky"
-- skip cutscene button broke?
+- change final room, add checkpoint (DONE)
+- more time on cooking (DONE)
+- physics "finicky" (DONE, could still refine though)
+- skip cutscene button broke? (DONE)
+- fix music looping
+- ending audio sounds bugged
+- opening cutscene too fast
