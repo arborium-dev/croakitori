@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VideoToSceneTransition
   sceneToLoad: Platforming
+  inputActions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!328 &1975181391
 VideoPlayer:
   m_ObjectHideFlags: 0
