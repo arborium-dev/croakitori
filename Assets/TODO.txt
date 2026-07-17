@@ -46,7 +46,7 @@ misc
 - change background color on main menu for when the video is loading (DONE)
 - redo changing of menu cutscene (DONE) (THIS WORKS FINE EVERYWHERE BUT THE UNITY EDITOR)
 - add the quit button back (DONE, UNTESTED)
-- more levels
+- more levels (scrapped)
 - some way of knowing you're out of grapples
 - skip indicator if any key is pressed during cutscene
 
@@ -74,7 +74,8 @@ bugs/feedback
 - more time on cooking (DONE)
 - physics "finicky" (DONE, could still refine though)
 - skip cutscene button broke? (DONE)
-- fix music looping (change music? then i have to update ending credits)
+- fix music looping (DONE)
+    - music was changed, so UPDATE README, ITCH PAGE and ENDING CUTSCENE
 - ending audio sounds bugged (DONE, only on bad speakers)
 - opening cutscene the text is too fast
 - able to collect spices by hitting spikes
