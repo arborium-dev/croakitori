@@ -1,4 +1,5 @@
-﻿# croakitori
+﻿# THIS IS NO LONGER THE MAINTAINED VERSION OF THE README. GO TO ROOT FOLDER
+# croakitori
 ## this is a game where food is illegal, and you do crimes.
 Taishi (Jeremiah Jr.) opens a sketchy underground chinese restaurant much to Dazhi’s dismay, Now Jeremiah (Taishi) must venture off to prove the beauty of chinese cuisine to his father and venture from his home in Guandu, to Wulai to make his father proud.
 
@@ -9,7 +10,7 @@ If you don't want to download the cutscene files, you can still compile the game
 
 To compile the game, download the source code from this repository, and open it in Unity 6000.3.8f1. Then, click on File > Build Settings, select your platform, and click Build.
 
-***If you don't want to compile the game from source, a playable web build is available at the following link: https://arboriumdev.itch.io/croakitori*** 
+***If you don't want to compile the game from source, a playable build is available at the following link or in the GitHub Releases: https://arboriumdev.itch.io/croakitori*** 
 
 ### Cast:
 - Jeremiah Taishi Wang Jr. - The son of Dazhi who owns sketchy Chinese restaurant (yellow, fat)
@@ -22,7 +23,9 @@ To compile the game, download the source code from this repository, and open it 
 
 ### Screenshots:
 
-(a gameplay video is also avalible at: https://youtu.be/sL2dV9rfkVY)
+Pictures from development and gameplay of Croakitori can be found in the Screenshots folder.
+
+A full gameplay video is also avalible at: https://youtu.be/sL2dV9rfkVY (this vide is a touch outdating, missing some small tweaks to scene transitions, but its basically the same game)
 
 ### Controls:
 #### Cooking Minigame:
@@ -81,7 +84,7 @@ Somehow, I was scheduled to be at a cottage, which ended up having very strict W
 That was how Croakitori was created.
 
 Croakitori uses code from previous projects I've worked on. The predictive platforming engine is based on one of my unfinished projects, all the UI takes from (B)eat Em Up in some way or another, and anything neither of us knew how do to we looked up or found tutorials.
-AI was used for debugging, and fixing some of the more intricate parts of TheBigUI and PlayerPlatforming.
+AI was used for debugging, and fixing some of the more intricate parts of TheBigUI (DoesEverything.cs) and PlayerPlatforming.
 
 NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITTING.
 
@@ -100,7 +103,7 @@ We also plan to recompile the cutscenes at higher resolutions and with less visu
 - Jetbrains Rider
 
 ### AI Disclosure:
-As stated above, AI was used for debugging, tutorials, and fixing some parts of TheBigUI, PlayerPlatforming, and a few other scripts. NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITTING. 
+As stated above, AI was used for debugging, tutorials, and fixing some parts of TheBigUI (DoesEverything.cs), PlayerPlatforming, and a few other scripts. NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITTING. 
 
 (the readme was also made by a human if you couldn't alread tell)
 

@@ -5677,6 +5677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673c826dc486d8c4aac0148a6f5fcd20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TransitionToCookingIntro
+  fadeImage: {fileID: 791528731}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0

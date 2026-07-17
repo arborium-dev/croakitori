@@ -1,6 +1,7 @@
 // DoesEverything.cs
 // Originally designed to just control the GUI in the cooking menu, this script now controls the buttons, timer, ingredient selection, scoring, orders, rating, and spawning objects on the pan.
 // All functions are correctly labeled for easy access though
+// This script is typically referred to as TheBigUI (its original name)
 
 using System;
 using UnityEngine;
@@ -563,7 +564,7 @@ public class DoesEverything : MonoBehaviour
         return correctCount;
     }
 
-    private bool[] GetCorrectSpiceMaskForOrder(int orderIndex)
+    private bool[] GetCorrectSpiceMaskForOrder(int orderIndex) // pretty brute force if i do say so myself
     {
         bool[] mask = new bool[5];
 
@@ -599,7 +600,7 @@ public class DoesEverything : MonoBehaviour
         return mask;
     }
 
-    private string GetRatingForCorrectCount(int correctCount)
+    private string GetRatingForCorrectCount(int correctCount) // also brute force
     {
         switch (Mathf.Clamp(correctCount, 0, 3))
         {

@@ -19,7 +19,7 @@ platforming
 - jerimiah at the end of the level, and thats the scene transition (DONE)
     - music as you get closer to him (scrapped)
 - death fade out (DONE)
-- sound effects
+- sound effects (scrapped)
 - player animations (DONE-ish)
     - draw them (DONE)
 
@@ -36,25 +36,30 @@ misc
 - find music for everything (DONE)
 - saving (scrapped)
 - pause menu
+- scene transitions smoothed out (DONE)
 - start screen changes on game completion (DONE)
 - loop easter egg with worm from BEAT EM UP (DONE)
 - polish camera transitions (DONE)
 - skip cutscenes P (DONE, not for last cutscene)
 - change grapple to tougne on all tutorial text (DONE)
 - change background color on main menu for when the video is loading (DONE)
-- redo changing of menu cutscene 
+- redo changing of menu cutscene (DONE) (THIS WORKS FINE EVERYWHERE BUT THE UNITY EDITOR)
+- add the quit button back (DONE, UNTESTED)
 
 management
-- update readme
-    - HAVE GAME SCREENSHOTS
+- update readme (DONE)
+    - HAVE GAME SCREENSHOTS (DONE)
+    - add pictures from early development (DONE)
 - gameplay video for the itch.io page (DONE)
-- add cutscenes to a google drive folder
-- setup itch.io page
+- add cutscenes to a google drive folder (DONE)
+- setup itch.io page (DONE, BUT ITCH WONT HOST THE FILES (FAT FUCKS))
 - setup readme on github repo
-- submit
+- submit (as windows build)
 
 bugs
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
+    - this also hasn't happened recently so maybe it was fixed by accident
 - camera starts on room 3 then transitions to player (only happenes in editor) (DONE)
 - you can move when you touch a spike (DONE)
-- fix checkpoing on R3 (coming from the right) (DONE)
+- fix checkpoint on R3 (coming from the right) (DONE)
+- top text on menu gets cut off on resolutions that aren't 16:9
