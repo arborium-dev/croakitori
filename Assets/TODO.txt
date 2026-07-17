@@ -2,9 +2,10 @@
 
 menu (DONE)
 - menu video (done)
-- settings? (scrapped)
- - audio (scrapped)
- - fullscreen (scrapped)
+- settings? 
+ - audio
+ - fullscreen
+ - reset game data
 
 platforming
 - grapple mechanic (DONE)
@@ -57,13 +58,14 @@ management
 - add cutscenes to a google drive folder (DONE)
 - setup itch.io page (DONE, BUT ITCH WONT HOST THE FILES (FAT FUCKS))
 - setup readme on github repo (DONE)
+- update readme with controller support
 - submit (as windows build)
 
 bugs/feedback
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
-    - this also hasn't happened recently so maybe it was fixed by accident
-- camera starts on room 3 then transitions to player (only happenes in editor) (DONE)
-- you can move when you touch a spike (DONE)
+    - could happen when you leave the room you died in
+- camera starts on room 3 then transitions to player
+- you can move when you touch a spike (scrapped)
 - fix checkpoint on R3 (coming from the right) (DONE)
 - top text on menu gets cut off on resolutions that aren't 16:9
 - when grappling, changing directions midair changes the direction of the grapple (DONE)
@@ -72,6 +74,7 @@ bugs/feedback
 - more time on cooking (DONE)
 - physics "finicky" (DONE, could still refine though)
 - skip cutscene button broke? (DONE)
-- fix music looping
-- ending audio sounds bugged
-- opening cutscene too fast
+- fix music looping (change music? then i have to update ending credits)
+- ending audio sounds bugged (DONE, only on bad speakers)
+- opening cutscene the text is too fast
+- able to collect spices by hitting spikes
