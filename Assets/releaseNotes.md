@@ -1,6 +1,9 @@
 ﻿# Croakitori V1.0 Release Notes
 ## Initial release of Croakitori, a game where food is illegal, and you do crimes.
 
+### Platforms Supported:
+- Windows 10/11
+
 ### Features:
   - Explore the underground world of food in Taiwan using your tongue.
   - Cook extravagant dishes to impress your father and gain respect in the culinary world.
