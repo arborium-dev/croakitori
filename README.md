@@ -8,6 +8,8 @@ To compile the game, download the source code from this repository, and open it 
 
 ***If you don't want to compile the game from source, a playable build is available at the following link or in the GitHub Releases: https://arboriumdev.itch.io/croakitori*** 
 
+a web build for croakitori will be available soon™ (the file size is too big, i need to redo the cutscene system)
+
 ### Cast:
 - Jeremiah Taishi Wang Jr. - The son of Dazhi who owns sketchy Chinese restaurant (yellow, fat)
 - Jeremiah Dazhi Wang Sr. - Rejected his Chinese heritage when Japan conquered Taiwan (comically big eyebrows, massive)
@@ -36,7 +38,7 @@ A full gameplay video is also available at: https://youtu.be/sL2dV9rfkVY (this v
 - Arrow Keys (or WASD) to cook the dish
 #### Platforming Minigame:
 - Arrow Keys (or WASD) to move
-- C to jump
+- C or Z to jump
 - X to extend your tongue (release to pull yourself to the point of contact)
 - Controller is supported for the platforming section (although it is untested). The controls are identical to those of Celeste (a to jump, x to grapple)
 #### Misc:

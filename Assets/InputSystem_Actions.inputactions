@@ -297,6 +297,17 @@
                 },
                 {
                     "name": "",
+                    "id": "c21b2fb9-9bad-49fc-bf7a-69dcb20ac158",
+                    "path": "<Keyboard>/z",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2498a308-eff9-48a9-927d-a9247f8793f6",
                     "path": "<Keyboard>/z",
                     "interactions": "",
