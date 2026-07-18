@@ -42,14 +42,14 @@ misc
 - loop easter egg with worm from BEAT EM UP (DONE)
 - polish camera transitions (DONE)
 - skip cutscenes P (DONE, not for last cutscene)
-- change grapple to tougne on all tutorial text (DONE)
+- change grapple to tongue on all tutorial text (DONE)
 - change background color on main menu for when the video is loading (DONE)
 - redo changing of menu cutscene (DONE) (THIS WORKS FINE EVERYWHERE BUT THE UNITY EDITOR)
 - add the quit button back (DONE, UNTESTED)
 - more levels (scrapped)
 - some way of knowing you're out of grapples (explained it in text, but add a visual indicator)
 - skip indicator if any key is pressed during cutscene
-- add swappable cutscenes based on reading speed
+- add swappable cutscenes based on reading speed (DONE)
 
 management
 - update readme (DONE)
@@ -65,7 +65,7 @@ management
 bugs/feedback
 - death fade out has a bug where the screen stays black forever (dont really know whats causing this tbh)
     - could happen when you leave the room you died in
-- camera starts on room 3 then transitions to player
+- camera starts on room 3 then transitions to player (DONE)
 - you can move when you touch a spike (scrapped)
 - fix checkpoint on R3 (coming from the right) (DONE)
 - top text on menu gets cut off on resolutions that aren't 16:9 (DONE)
@@ -80,5 +80,5 @@ bugs/feedback
     - make new music quieter (DONE)
 - ending audio sounds bugged (DONE, only on bad speakers)
 - opening cutscene the text is too fast (DONE)
-- able to collect spices by hitting spikes
+- able to collect spices by hitting spikes (DONE)
 - R8 has a broken jump (DONE)

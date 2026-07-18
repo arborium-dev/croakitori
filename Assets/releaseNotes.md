@@ -13,3 +13,6 @@
 - Audio in some parts of cutscenes is slightly out of sync
 - Some cutscenes have low resolution textures/are blurry
 - The Main Menu background is initially laggy on some systems
+
+### Linux & Web release soon™.
+### For those of you coming from the itch.io page, click croakitori.zip to download the game.
