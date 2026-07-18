@@ -38,6 +38,7 @@ A full gameplay video is also available at: https://youtu.be/sL2dV9rfkVY (this v
 - Arrow Keys (or WASD) to move
 - C to jump
 - X to extend your tongue (release to pull yourself to the point of contact)
+- Controller is supported for the platforming section (although it is untested). The controls are identical to those of Celeste (a to jump, x to grapple)
 #### Misc:
 - P to skip cutscenes
 
@@ -79,7 +80,7 @@ We originally started this project about 1 week after horizons was announced, an
 The only problem was that Horizons had a 33% art limit, and Khan's computer can't run Unity (Godot is not the same, its a lot harder to use imo).
 So, every week we met up and I gave him my laptop to work on the game, while I used a desktop computer. Eventually, Khan got to his required 35h hours, and I began development (taking back my laptop).
 
-fun little side story here, khan forgot to upload the platforming music so I had to find a replacement, which ended up being the music from Pikuniku. the music will be replaced with original music in the future.
+fun little side story here, khan forgot to upload the platforming music so I had to find a replacement, which ended up being the music Watch My Soul Speak. the music will be replaced with original music in the future.
 
 At this point its worth mentioning that theres **2 more weeks before the game is due, and I have to get 33h** (look I was busy with exams and projects and stuff). This wouldn't be a problem if I was at home and I could work on it for 8 hours a day and be done quick. 
 Somehow, I was scheduled to be at a cottage, which ended up having very strict WiFi usage limits, and with the power going out occasionally. It was at this cottage that I finished all the platforming, the cutscenes, the menu, everything else basically (i am writing this readme on a porch).
@@ -111,7 +112,7 @@ As stated above, AI was used for debugging, tutorials, and fixing some parts of 
 (the readme was also made by a human if you couldn't already tell)
 
 ### Very Tentative Roadmap for 2026:
-- Remove Pikuniku music and replace with original music
+- Remove placeholder music and replace with original music
 - Recompile current cutscenes at higher resolutions and with less visual artifacts
 - Next Platforming Level: Cherry Blossom Festival
 - Next Cooking Minigame: Remake the cooking minigame with rhythm mechanics

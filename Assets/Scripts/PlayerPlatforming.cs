@@ -2,6 +2,7 @@
 // This script controls how the player physics and collisions function
 // this also includes thr grapple physics, sadly
 
+using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -675,7 +676,15 @@ public class PlayerPlatforming : MonoBehaviour
         }
 
         // 2. DO THE ACTUAL RESPAWN LOGIC (While the screen is fully black)
-        OnPlayerDeath?.Invoke();
+        try // this should tell me more about why the black screen happens
+        {
+            OnPlayerDeath?.Invoke();
+        }
+        catch (System.Exception e)
+        {
+            Debug.LogError($"Error during OnPlayerDeath event: {e.Message}\n{e.StackTrace}");
+        }
+
     
         // teleport
         transform.position = CheckpointManager.Instance.currentCheckpoint;

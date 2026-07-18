@@ -47,8 +47,9 @@ misc
 - redo changing of menu cutscene (DONE) (THIS WORKS FINE EVERYWHERE BUT THE UNITY EDITOR)
 - add the quit button back (DONE, UNTESTED)
 - more levels (scrapped)
-- some way of knowing you're out of grapples
+- some way of knowing you're out of grapples (explained it in text, but add a visual indicator)
 - skip indicator if any key is pressed during cutscene
+- add swappable cutscenes based on reading speed
 
 management
 - update readme (DONE)
@@ -58,7 +59,7 @@ management
 - add cutscenes to a google drive folder (DONE)
 - setup itch.io page (DONE, BUT ITCH WONT HOST THE FILES (FAT FUCKS))
 - setup readme on github repo (DONE)
-- update readme with controller support
+- update readme with controller support (DONE)
 - submit (as windows build)
 
 bugs/feedback
@@ -67,7 +68,7 @@ bugs/feedback
 - camera starts on room 3 then transitions to player
 - you can move when you touch a spike (scrapped)
 - fix checkpoint on R3 (coming from the right) (DONE)
-- top text on menu gets cut off on resolutions that aren't 16:9
+- top text on menu gets cut off on resolutions that aren't 16:9 (DONE)
 - when grappling, changing directions midair changes the direction of the grapple (DONE)
 - able to access sourdough early by grapple jumping from R2 (DONE)
 - change final room, add checkpoint (DONE)
@@ -75,7 +76,9 @@ bugs/feedback
 - physics "finicky" (DONE, could still refine though)
 - skip cutscene button broke? (DONE)
 - fix music looping (DONE)
-    - music was changed, so UPDATE README, ITCH PAGE and ENDING CUTSCENE
+    - music was changed, so UPDATE README, ITCH PAGE and ENDING CUTSCENE (DONE)
+    - make new music quieter (DONE)
 - ending audio sounds bugged (DONE, only on bad speakers)
-- opening cutscene the text is too fast
+- opening cutscene the text is too fast (DONE)
 - able to collect spices by hitting spikes
+- R8 has a broken jump (DONE)

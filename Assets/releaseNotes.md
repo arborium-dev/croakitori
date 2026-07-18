@@ -10,9 +10,6 @@
 
 ### Known Issues:
 - Mysterious glitch in the platforming section where on death the screen occasionally stays black and the player is unable to respawn (if you have ANY information on this please contact will.kuntze@arborium.dev)
-- Main Menu text gets cut off on resolutions that aren't 16:9 
-- Audio in ending cutscene is a little staticy
 - Audio in some parts of cutscenes is slightly out of sync
-- Camera starts on R3 and then jumps to player when initially loading the platforming section
 - Some cutscenes have low resolution textures/are blurry
-- The Main Menu background is laggy on some systems
+- The Main Menu background is initially laggy on some systems
