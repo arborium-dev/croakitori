@@ -93,6 +93,10 @@ public class IngredientCollectableManager : MonoBehaviour
 
             if (_followTimer > 0.15f && _playerScript != null && _playerScript.IsGrounded())
             {
+                // wait a short time before collecting to prevent hazards counting as collecting the ingredient
+                
+                
+                
                 Collect();
             }
         }
@@ -129,7 +133,10 @@ public class IngredientCollectableManager : MonoBehaviour
     {
         // Stop following and return to idle state
         _isFollowing = false;
+        _isCollected = false;
         _followTimer = 0f;
+        _playerTransform = null;
+        
         transform.position = _startPosition;
         
         // Re-enable sprite and collider if they were disabled
@@ -143,6 +150,9 @@ public class IngredientCollectableManager : MonoBehaviour
         if (popupText != null)
         {
             popupText.gameObject.SetActive(false);
+            Color c = popupText.color;
+            c.a = 0f;
+            popupText.color = c;
         }
     }
 

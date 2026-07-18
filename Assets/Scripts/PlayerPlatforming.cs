@@ -89,7 +89,7 @@ public class PlayerPlatforming : MonoBehaviour
     [SerializeField] private float fadeSpeed = 5f; 
     
     // This prevents the player from triggering multiple respawns at the same time
-    private bool _isRespawning = false;
+    public bool _isRespawning = false;
     
     // ANIMATION CODE YIPPEE
 
