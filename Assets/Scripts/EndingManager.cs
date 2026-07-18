@@ -1,4 +1,5 @@
 // THIS CODE IS ALL UNTESTED
+// SCRAPPED? im pretty sure this code is never used
 // EndingManager.cs
 // This loads a video based on the score passed through from DoesEverything.cs
 

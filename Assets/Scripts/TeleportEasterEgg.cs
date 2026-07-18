@@ -1,3 +1,6 @@
+// TeleportEasterEgg.cs
+// funny little easter egg.
+
 using UnityEngine;
 
 public class TeleportEasterEgg : MonoBehaviour

@@ -1,3 +1,6 @@
+// VideoToSceneTransition.cs
+// this file manages MOST of the scene transitions from scenes that are just videos. This also includes the ability to skip cutscenes
+
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;

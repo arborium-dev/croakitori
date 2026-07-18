@@ -1,3 +1,6 @@
+// OpeningSceneChanger.cs
+// Changes the opening cutscene based on reading speed
+
 using UnityEngine;
 using UnityEngine.Video;
 

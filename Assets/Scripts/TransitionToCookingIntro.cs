@@ -1,3 +1,6 @@
+// TransitionToCookingIntro.cs
+// Is activated when the cooking timer reaches 0
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
