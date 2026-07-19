@@ -109,7 +109,7 @@ We also plan to recompile the cutscenes at higher resolutions and with less visu
 - Jetbrains Rider
 
 ### AI Disclosure:
-As stated above, AI was used for debugging, tutorials, and fixing some parts of TheBigUI (DoesEverything.cs), PlayerPlatforming, and a few other scripts. NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITING. 
+As stated above, AI was used for debugging, tutorials (not in-game, just how to use some specific parts of unity), and fixing some parts of TheBigUI (DoesEverything.cs), PlayerPlatforming, and a few other scripts. NO AI WAS USED FOR ANY OF THE ART, CUTSCENES, MUSIC, OR WRITING. 
 
 (the readme was also made by a human if you couldn't already tell)
 
