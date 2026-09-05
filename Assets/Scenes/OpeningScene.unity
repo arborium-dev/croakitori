@@ -296,7 +296,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975181389}
   m_Enabled: 1
-  m_VideoClip: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: e555fb3827ebeb9449634672e5be6a6a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1260807773}
@@ -369,8 +369,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OpeningSceneChanger
   videoPlayer: {fileID: 1975181391}
-  slowVideo: {fileID: 32900000, guid: 893faf6da9ab849459d2da65edf306b2, type: 3}
-  fastVideo: {fileID: 32900000, guid: 893faf6da9ab849459d2da65edf306b2, type: 3}
+  slowVideo: {fileID: 32900000, guid: e555fb3827ebeb9449634672e5be6a6a, type: 3}
+  fastVideo: {fileID: 32900000, guid: e555fb3827ebeb9449634672e5be6a6a, type: 3}
 --- !u!4 &2102345408
 Transform:
   m_ObjectHideFlags: 0
