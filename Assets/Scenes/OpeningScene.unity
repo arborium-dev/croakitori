@@ -370,7 +370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::OpeningSceneChanger
   videoPlayer: {fileID: 1975181391}
   slowVideo: {fileID: 32900000, guid: 893faf6da9ab849459d2da65edf306b2, type: 3}
-  fastVideo: {fileID: 32900000, guid: 6334aa6c4e7ebfe49acaebb1fe5f372e, type: 3}
+  fastVideo: {fileID: 32900000, guid: 893faf6da9ab849459d2da65edf306b2, type: 3}
 --- !u!4 &2102345408
 Transform:
   m_ObjectHideFlags: 0

@@ -17,16 +17,18 @@ public class MainMenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameComplete = PlayerPrefs.GetInt("GameComplete", 0) == 1;
-        if (gameComplete == true)
-        {
-            videoPlayer.clip = Resources.Load<VideoClip>("Cutscenes/croakitori main menu alt");
-        }    
+        // gameComplete = PlayerPrefs.GetInt("GameComplete", 0) == 1;
+        // if (gameComplete == true)
+        // {
+        //     videoPlayer.clip = Resources.Load<VideoClip>("Cutscenes/croakitori main menu alt");
+        // }    
         // Only set a default if the key doesn't exist
-        if (!PlayerPrefs.HasKey("ReadingSpeed"))
-            PlayerPrefs.SetInt("ReadingSpeed", 1);
+        // if (!PlayerPrefs.HasKey("ReadingSpeed"))
+        //     PlayerPrefs.SetInt("ReadingSpeed", 1);
 
-        UpdateReadingSpeedText();
+        // UpdateReadingSpeedText();
+        // force reading speed to be slow
+        
     }
 
     // Update is called once per frame
@@ -44,23 +46,23 @@ public class MainMenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void ChangeReadingSpeed()
-    {
-        int current = PlayerPrefs.GetInt("ReadingSpeed", 1);
-        int next = (current == 1) ? 0 : 1;
-        PlayerPrefs.SetInt("ReadingSpeed", next);
-        PlayerPrefs.Save();
-
-        UpdateReadingSpeedText();
-        Debug.Log($"Reading Speed: {next}");
-    }
-
-    private void UpdateReadingSpeedText()
-    {
-        if (readingSpeedText == null) return;
-        bool isFast = PlayerPrefs.GetInt("ReadingSpeed", 0) == 1;
-        readingSpeedText.text = isFast ? "Reading Speed: Fast" : "Reading Speed: Slow";
-    }
+    // public void ChangeReadingSpeed()
+    // {
+    //     int current = PlayerPrefs.GetInt("ReadingSpeed", 1);
+    //     int next = (current == 1) ? 0 : 1;
+    //     PlayerPrefs.SetInt("ReadingSpeed", next);
+    //     PlayerPrefs.Save();
+    //
+    //     UpdateReadingSpeedText();
+    //     Debug.Log($"Reading Speed: {next}");
+    // }
+    //
+    // private void UpdateReadingSpeedText()
+    // {
+    //     if (readingSpeedText == null) return;
+    //     bool isFast = PlayerPrefs.GetInt("ReadingSpeed", 0) == 1;
+    //     readingSpeedText.text = isFast ? "Reading Speed: Fast" : "Reading Speed: Slow";
+    // }
 
     public void SkipToCooking()
     {
