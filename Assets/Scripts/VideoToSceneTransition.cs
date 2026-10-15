@@ -24,6 +24,7 @@ public class VideoToSceneTransition : MonoBehaviour
         videoPlayer.loopPointReached += OnVideoEnd;
 
         skipCutscene = inputActions != null ? inputActions.FindAction("Skip", false) : null;
+        skipCutscene?.Enable();
 }
 
     void OnEnable()
