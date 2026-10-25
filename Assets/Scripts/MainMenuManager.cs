@@ -74,6 +74,11 @@ public class MainMenuManager : MonoBehaviour
         SceneManager.LoadScene("OpeningScene");
         gameComplete  = false;
     }
+
+    public void MakeFullscreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+    }
     
     
 }
